@@ -56,6 +56,10 @@ const eslintConfig = defineConfig([
         },
       ],
       "simple-import-sort/exports": "error",
+      "react/jsx-curly-brace-presence": [
+        "error",
+        { props: "never", children: "never" },
+      ],
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": [
         "error",

@@ -1,0 +1,39 @@
+.wrapper {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  z-index: 1;
+  padding: 13px 26px;
+  border-radius: 99px;
+  display: flex;
+  gap: 41px;
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+}
+
+.blurred {
+  height: 32px;
+  position: absolute;
+  top: 7px;
+  border-radius: 99px;
+}
+
+.blurredLeft {
+  width: 100px;
+  left: 7px;
+}
+
+.blurredRight {
+  width: 85px;
+  right: 7px;
+}
+
+.link {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}

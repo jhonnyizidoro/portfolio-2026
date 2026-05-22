@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 import BodyBackground from "@/components/atoms/BodyBackground";
 import FloatingContact from "@/components/molecules/FloatingContact";
+import LanguageSwitch from "@/components/molecules/LanguageSwitch";
 
 import { Language } from "@/@types/i18n";
 import { proximaNova } from "@/assets/fonts";
@@ -35,6 +36,7 @@ const RootLayout: FC<PropsWithChildren<Props>> = async ({
       <I18nProvider language={language} t={t}>
         <body>
           <FloatingContact />
+          <LanguageSwitch />
           <BodyBackground />
           <main className={styles.content}>{children}</main>
         </body>

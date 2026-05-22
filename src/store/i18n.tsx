@@ -11,7 +11,7 @@ import { Language, Messages } from "@/@types/i18n";
 
 type I18nContextValue = { language: Language; t: Messages };
 
-const I18nContext = createContext<I18nContextValue | null>(null);
+const I18nContext = createContext<I18nContextValue>({} as I18nContextValue);
 
 type Props = PropsWithChildren<{ language: Language; t: Messages }>;
 
