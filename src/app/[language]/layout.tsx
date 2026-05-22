@@ -1,6 +1,8 @@
 import { FC, PropsWithChildren } from "react";
 import type { Metadata } from "next";
 
+import BodyBackground from "@/components/atoms/BodyBackground";
+
 import { Language } from "@/@types/i18n";
 import { proximaNova } from "@/assets/fonts";
 import en from "@/messages/en.json";
@@ -8,6 +10,7 @@ import ptBr from "@/messages/pt-br.json";
 import { I18nProvider } from "@/store/i18n";
 
 import "@/assets/globals.scss";
+import styles from "./layout.module.scss";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,7 +32,10 @@ const RootLayout: FC<PropsWithChildren<Props>> = async ({
   return (
     <html lang={language} className={proximaNova.variable}>
       <I18nProvider language={language} t={t}>
-        <body>{children}</body>
+        <body>
+          <BodyBackground />
+          <main className={styles.content}>{children}</main>
+        </body>
       </I18nProvider>
     </html>
   );

@@ -1,6 +1,8 @@
 :root {
-  --color-accent: #0a0a0a;
-  --color-t1: #ededed;
+  --color-accent: #36f4a4;
+  --color-t1: #e8e8e8;
+  --color-t2: #b7b7b7;
+  --color-dark: #18191b;
 }
 
 html {
@@ -12,6 +14,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: var(--color-dark);
 }
 
 body {
