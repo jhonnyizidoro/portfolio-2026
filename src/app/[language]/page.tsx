@@ -7,12 +7,7 @@ const HomePage: FC = async () => {
   const language = await getLanguage();
   const t = await getTranslations();
 
-  return (
-    <>
-      <h1>{t.intro.title}</h1>
-      <Link href={language === "en" ? "/pt-br" : "/en"}>Switch language</Link>
-    </>
-  );
+  return <></>;
 };
 
 export default HomePage;

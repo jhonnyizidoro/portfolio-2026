@@ -1,0 +1,20 @@
+.blurred {
+  background: rgb(255 255 255 / 10%);
+  backdrop-filter: blur(10px);
+}
+
+.bordered {
+  border: 1px solid rgb(255 255 255 / 10%);
+}
+
+.shadowSm {
+  box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+}
+
+.shadowMd {
+  box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+}
+
+.shadowLg {
+  box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+}
