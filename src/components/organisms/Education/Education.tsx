@@ -1,5 +1,7 @@
 import type { FC } from "react";
 
+import { sectionIds } from "@/constants";
+
 import Blurred from "@/components/atoms/Blurred";
 import Container from "@/components/atoms/Container";
 
@@ -16,7 +18,7 @@ import {
 import styles from "./Education.module.scss";
 
 const Education: FC = () => (
-  <Container size="md">
+  <Container size="md" id={sectionIds.education}>
     <h2 className={styles.title}>Education</h2>
     <div className={styles.wrapper}>
       <SphereIcon className={cn(styles.sphere, styles.sphereTop)} />

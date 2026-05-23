@@ -1,0 +1,189 @@
+.containerWrapper {
+  position: relative;
+}
+
+.sphere {
+  position: absolute;
+  filter: drop-shadow(0 0 40px rgb(0 0 0 / 10%));
+  right: -100px;
+  top: 140px;
+  width: 550px;
+  animation: drift 7s ease-in-out infinite;
+}
+
+.container {
+  margin-block: 170px;
+}
+
+.title {
+  text-align: center;
+  color: var(--color-t2);
+  font-size: 24px;
+  font-weight: var(--weight-semibold);
+  margin-bottom: 100px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 170px 140px;
+  position: relative;
+  align-items: start;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    bottom: 50px;
+  }
+
+  // Vertical line
+  &::after {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      color-mix(var(--color-accent) 30%, transparent) 100px
+    );
+  }
+
+  // Dot in the bottom
+  &::before {
+    width: 10px;
+    height: 10px;
+    background: var(--color-accent);
+    border-radius: 50%;
+  }
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  padding: 30px;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+  }
+
+  // Horizontal line
+  &::after {
+    height: 2px;
+    width: 70px;
+  }
+
+  // Arrowhead at end of horizontal line
+  &::before {
+    top: 36px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+}
+
+.cardLeft {
+  &::after {
+    right: 0;
+    translate: 100%;
+    background: linear-gradient(to right, transparent, var(--color-accent));
+  }
+
+  &::before {
+    right: -70px;
+    border-right: 5px solid var(--color-accent);
+  }
+}
+
+.cardRight {
+  translate: 0 200px;
+
+  &::after {
+    left: 0;
+    translate: -100%;
+    background: linear-gradient(to right, var(--color-accent), transparent);
+  }
+
+  &::before {
+    left: -70px;
+    border-left: 5px solid var(--color-accent);
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.role {
+  font-size: 24px;
+  font-weight: var(--weight-semibold);
+}
+
+.company {
+  color: var(--color-accent);
+  font-size: 20px;
+  text-shadow: 0 0 10px color-mix(var(--color-accent) 50%, transparent);
+  font-weight: var(--weight-semibold);
+}
+
+.date {
+  font-size: 14px;
+  padding: 5px 15px;
+  border-radius: 99px;
+}
+
+.achievement {
+  line-height: 1.6;
+  margin-top: 30px;
+}
+
+.stackWrapper {
+  margin-top: 60px;
+}
+
+.stack {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 15px;
+}
+
+.stackTitle {
+  font-weight: var(--weight-bold);
+}
+
+.stackItem {
+  opacity: 0.7;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    translate: 0 0;
+    scale: 1;
+  }
+
+  25% {
+    translate: 10px -14px;
+    scale: 1.03;
+  }
+
+  60% {
+    translate: -6px -20px;
+    scale: 1;
+  }
+
+  80% {
+    translate: 5px -10px;
+    scale: 1.02;
+  }
+}

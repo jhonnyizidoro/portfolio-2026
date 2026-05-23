@@ -66,14 +66,27 @@
   width: 240px;
   height: 240px;
   border-radius: 40px;
+  transition: 1s;
 }
 
 .patternBottom {
+  bottom: 0;
+  left: 0;
+  scale: 0.7;
+}
+
+.patternBottomVisible {
   bottom: -60px;
   left: -60px;
 }
 
 .patternTop {
+  top: 0;
+  right: 0;
+  scale: 0.7;
+}
+
+.patternTopVisible {
   top: -60px;
   right: -60px;
 }

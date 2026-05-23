@@ -18,8 +18,8 @@ export function SphereIcon(props: SVGProps<SVGSVGElement>) {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(57.5 35.5) rotate(78.9436) scale(132.968)"
         >
-          <stop stop-color="#2F3033" />
-          <stop offset="1" stop-color="#18191B" />
+          <stop stopColor="#2F3033" />
+          <stop offset="1" stopColor="#18191B" />
         </radialGradient>
       </defs>
     </svg>
