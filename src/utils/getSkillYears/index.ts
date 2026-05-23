@@ -1,0 +1,1 @@
+export { getSkillYears } from "./getSkillYears";

@@ -1,0 +1,78 @@
+.container {
+  display: grid;
+  grid-template-columns: 70% auto;
+  gap: 40px;
+  position: relative;
+}
+
+.card {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.cardHigh {
+  grid-row: span 2;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: var(--weight-regular);
+}
+
+.titleAccent {
+  color: var(--color-accent);
+}
+
+.titlePurple {
+  color: var(--color-purple);
+}
+
+.titleRed {
+  color: var(--color-red);
+}
+
+.text {
+  font-size: 15px;
+  display: block;
+  margin-block: 10px 30px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill {
+  display: inline-flex;
+  gap: 40px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.time {
+  font-weight: var(--weight-semibold);
+}
+
+.pattern {
+  position: absolute;
+  background-image: radial-gradient(
+    circle,
+    rgb(255 255 255 / 18%) 1px,
+    transparent 1px
+  );
+  background-size: 14px 14px;
+  width: 240px;
+  height: 240px;
+  border-radius: 40px;
+}
+
+.patternBottom {
+  bottom: -60px;
+  left: -60px;
+}
+
+.patternTop {
+  top: -60px;
+  right: -60px;
+}
