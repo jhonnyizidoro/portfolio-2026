@@ -1,5 +1,8 @@
 .pointer {
   position: relative;
+  filter: drop-shadow(
+    0 0 15px color-mix(in srgb, var(--color-accent) 50%, transparent)
+  );
 
   &::after {
     width: 8px;
