@@ -1,13 +1,14 @@
 import type { FC } from "react";
-import Link from "next/link";
 
-import { getLanguage, getTranslations } from "@/server/i18n";
+import Introduction from "@/components/organisms/Introduction";
 
 const HomePage: FC = async () => {
-  const language = await getLanguage();
-  const t = await getTranslations();
-
-  return <></>;
+  return (
+    <>
+      <Introduction />
+      <div style={{ height: 1000 }} />
+    </>
+  );
 };
 
 export default HomePage;

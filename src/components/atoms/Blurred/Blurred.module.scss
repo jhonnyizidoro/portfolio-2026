@@ -1,6 +1,22 @@
 .blurred {
-  background: rgb(255 255 255 / 10%);
-  backdrop-filter: blur(10px);
+  background:
+    radial-gradient(
+      ellipse at top left,
+      rgb(255 255 255 / 5%) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at bottom right,
+      rgb(255 255 255 / 3%) 0%,
+      transparent 55%
+    ),
+    linear-gradient(
+      109.95deg,
+      rgb(217 217 217 / 7%) 2.01%,
+      rgb(81 81 81 / 7%) 53.12%,
+      rgb(217 217 217 / 7%) 100.44%
+    );
+  backdrop-filter: blur(5px);
 }
 
 .bordered {
@@ -8,13 +24,13 @@
 }
 
 .shadowSm {
-  box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+  box-shadow: 0 0 15px rgb(0 0 0 / 10%);
 }
 
 .shadowMd {
-  box-shadow: 0 0 30px rgb(0 0 0 / 15%);
+  box-shadow: 0 0 30px rgb(0 0 0 / 10%);
 }
 
 .shadowLg {
-  box-shadow: 0 0 45px rgb(0 0 0 / 15%);
+  box-shadow: 0 0 45px rgb(0 0 0 / 10%);
 }

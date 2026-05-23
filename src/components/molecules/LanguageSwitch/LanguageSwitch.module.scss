@@ -1,5 +1,5 @@
 .wrapper {
-  position: fixed;
+  position: absolute;
   right: 30px;
   top: 30px;
   z-index: 1;
@@ -9,9 +9,9 @@
   gap: 41px;
 }
 
-.text {
-  position: relative;
-  z-index: 1;
+.wrapperScrolled {
+  position: fixed;
+  animation: show-header 1.9s forwards;
 }
 
 .blurred {
@@ -36,4 +36,13 @@
   gap: 10px;
   font-size: 14px;
   line-height: 1.4;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+
+@keyframes show-header {
+  from {
+    translate: 0 -300px;
+  }
 }

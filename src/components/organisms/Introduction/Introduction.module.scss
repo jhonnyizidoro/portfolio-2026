@@ -1,0 +1,137 @@
+.container {
+  display: grid;
+  grid-template-columns: auto minmax(650px, 820px);
+  gap: 140px;
+  height: max(100vh, 650px);
+  align-items: center;
+  position: relative;
+}
+
+.left {
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.heading {
+  display: inline-flex;
+  gap: 10px;
+  border-radius: 99px;
+  padding: 5px 11px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: var(--weight-extrabold);
+  margin-block: 30px 15px;
+}
+
+.myName {
+  color: var(--color-accent);
+}
+
+.text {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+.button {
+  padding: 16px 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: var(--weight-semibold);
+  border-radius: 10px;
+}
+
+.buttonAccentIcon {
+  fill: var(--color-dark);
+}
+
+.buttonAccent {
+  background: var(--color-accent);
+  color: var(--color-dark);
+  margin-right: 20px;
+  box-shadow: 0 0 20px color-mix(in srgb, var(--color-accent) 20%, transparent);
+}
+
+.right {
+  position: relative;
+  text-align: center;
+}
+
+.pill {
+  position: absolute;
+  width: clamp(280px, 17.7vw, 340px);
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.leftPill {
+  bottom: 30px;
+  right: calc(50% + 70px);
+}
+
+.centerPill {
+  bottom: 170px;
+  right: 50%;
+}
+
+.rightPill {
+  bottom: 80px;
+  left: calc(50% + 60px);
+}
+
+.pillContent {
+  padding: 15px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99px;
+  flex-grow: 1;
+}
+
+.pillIcon {
+  fill: var(--color-t2);
+}
+
+.center {
+  position: relative;
+}
+
+.imageCommon {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+}
+
+.image {
+  object-fit: cover;
+  box-shadow: 0 0 100px color-mix(in srgb, var(--color-accent) 10%, transparent);
+  position: relative;
+  z-index: 1;
+}
+
+.pattern {
+  position: absolute;
+  background-image: radial-gradient(
+    circle,
+    rgb(255 255 255 / 18%) 1px,
+    transparent 1px
+  );
+  background-size: 14px 14px;
+}
+
+.patternBottom {
+  top: 50%;
+  right: 50%;
+}
+
+.patternTop {
+  bottom: 50%;
+  left: 50%;
+}

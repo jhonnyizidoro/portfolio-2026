@@ -3,8 +3,6 @@ import { SVGProps } from "react";
 export function PhoneIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width="13"
-      height="13"
       viewBox="0 0 13 13"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

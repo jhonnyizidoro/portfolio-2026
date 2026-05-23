@@ -3,8 +3,6 @@ import { SVGProps } from "react";
 export function EnvelopeIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width="14"
-      height="10"
       viewBox="0 0 14 10"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

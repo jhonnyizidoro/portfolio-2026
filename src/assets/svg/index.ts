@@ -1,7 +1,11 @@
+export { ArrowRightIcon } from "./ArrowRightIcon";
 export { BrFlagIcon } from "./BrFlagIcon";
+export { ChipIcon } from "./ChipIcon";
+export { ConfigIcon } from "./ConfigIcon";
 export { EnvelopeIcon } from "./EnvelopeIcon";
 export { GithubIcon } from "./GithubIcon";
 export { LinkedinIcon } from "./LinkedinIcon";
 export { PhoneIcon } from "./PhoneIcon";
 export { UsFlagIcon } from "./UsFlagIcon";
+export { WebPageIcon } from "./WebPageIcon";
 export { WhatsAppIcon } from "./WhatsAppIcon";

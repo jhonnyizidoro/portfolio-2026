@@ -1,0 +1,40 @@
+.pointer {
+  position: relative;
+
+  &::after {
+    width: 8px;
+    height: 8px;
+    display: block;
+    border: 2px solid var(--color-accent);
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    background: var(--color-dark);
+  }
+}
+
+.horizontalPointer {
+  height: 1px;
+  width: 70px;
+  background: linear-gradient(to right, transparent, var(--color-accent));
+
+  &::after {
+    right: 0;
+    top: -6px;
+  }
+}
+
+.pointerLeft {
+  rotate: 180deg;
+}
+
+.verticalPointer {
+  width: 1px;
+  height: 70px;
+  background: linear-gradient(to top, transparent, var(--color-accent));
+
+  &::after {
+    left: -5px;
+    top: -6px;
+  }
+}

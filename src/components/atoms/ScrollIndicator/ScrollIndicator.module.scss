@@ -1,0 +1,21 @@
+.indicator {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  translate: 50%;
+  transition: 0.25s;
+}
+
+.scrolled {
+  translate: 50% -100px;
+  opacity: 0;
+  pointer-events: none;
+}

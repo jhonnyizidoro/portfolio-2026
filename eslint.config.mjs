@@ -56,6 +56,7 @@ const eslintConfig = defineConfig([
         },
       ],
       "simple-import-sort/exports": "error",
+      "react/self-closing-comp": ["error", { component: true, html: true }],
       "react/jsx-curly-brace-presence": [
         "error",
         { props: "never", children: "never" },

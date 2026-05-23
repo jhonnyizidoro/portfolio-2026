@@ -3,6 +3,13 @@
   --color-t1: #e8e8e8;
   --color-t2: #b7b7b7;
   --color-dark: #18191b;
+  --weight-thin: 100;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+  --weight-black: 900;
 }
 
 html {
@@ -34,4 +41,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
 }
