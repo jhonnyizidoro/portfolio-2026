@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 type Props = {
   params: Promise<{
-    language: Language;
+    language: string;
   }>;
 };
 
@@ -29,7 +29,7 @@ const RootLayout: FC<PropsWithChildren<Props>> = async ({
   children,
   params,
 }) => {
-  const language = (await params).language;
+  const language = (await params).language as Language;
   const t = language === "en" ? en : ptBr;
   return (
     <html lang={language} className={proximaNova.variable}>
