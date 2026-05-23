@@ -51,6 +51,8 @@ describe("getSkillYears", () => {
   });
 
   it("handles empty experiences array", () => {
-    expect(getSkillYears("React", [], JAN_2020)).toBe(0);
+    expect(
+      getSkillYears("React", [] as ReturnType<typeof exp>[], JAN_2020),
+    ).toBe(0);
   });
 });

@@ -54,7 +54,7 @@
   background: var(--color-accent);
   color: var(--color-dark);
   margin-right: 20px;
-  box-shadow: 0 0 20px color-mix(in srgb, var(--color-accent) 20%, transparent);
+  box-shadow: 0 0 20px color-mix(var(--color-accent) 20%, transparent);
   border: 0;
 }
 
@@ -112,7 +112,7 @@
 
 .image {
   object-fit: cover;
-  box-shadow: 0 0 100px color-mix(in srgb, var(--color-accent) 10%, transparent);
+  box-shadow: 0 0 100px color-mix(var(--color-accent) 10%, transparent);
   position: relative;
   z-index: 1;
 }

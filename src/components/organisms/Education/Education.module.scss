@@ -1,0 +1,161 @@
+.title {
+  font-size: 58px;
+  background-image: linear-gradient(
+    to right,
+    var(--color-t1),
+    color-mix(var(--color-t1) 50%, var(--color-dark))
+  );
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 60px;
+
+  &::after {
+    width: 100%;
+    height: 5px;
+    border-radius: 9px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    box-shadow: 0 0 10px color-mix(var(--color-accent) 70%, transparent);
+    background-image: linear-gradient(
+      to right,
+      var(--color-accent),
+      color-mix(var(--color-accent) 50%, var(--color-dark))
+    );
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+  position: relative;
+}
+
+.sphere {
+  position: absolute;
+  filter: drop-shadow(0 0 40px rgb(0 0 0 / 10%));
+}
+
+.sphereTop {
+  right: -100px;
+  top: -40px;
+  width: 170px;
+  animation: drift-a 7s ease-in-out infinite;
+}
+
+.sphereBottom {
+  bottom: -70px;
+  left: -40px;
+  width: 110px;
+  animation: drift-b 5s ease-in-out infinite;
+}
+
+.card {
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.iconWrapper {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 20px color-mix(var(--color-accent) 30%, transparent);
+  background: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  fill: var(--color-dark);
+}
+
+.text {
+  font-weight: var(--weight-semibold);
+}
+
+.textLight {
+  opacity: 0.7;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.textMedium {
+  font-size: 18px;
+  font-weight: var(--weight-regular);
+  margin-top: 4px;
+  display: block;
+}
+
+.list {
+  display: flex;
+  gap: 15px;
+}
+
+.listItem {
+  padding: 5px 10px;
+  border-radius: 99px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+@keyframes drift-a {
+  0%,
+  100% {
+    translate: 0 0;
+    scale: 1;
+  }
+
+  25% {
+    translate: 10px -14px;
+    scale: 1.03;
+  }
+
+  60% {
+    translate: -6px -20px;
+    scale: 1;
+  }
+
+  80% {
+    translate: 5px -10px;
+    scale: 1.02;
+  }
+}
+
+@keyframes drift-b {
+  0%,
+  100% {
+    translate: 0 0;
+    scale: 1;
+  }
+
+  30% {
+    translate: -8px 12px;
+    scale: 1.04;
+  }
+
+  65% {
+    translate: 6px 18px;
+    scale: 1;
+  }
+
+  85% {
+    translate: -4px 9px;
+    scale: 1.02;
+  }
+}

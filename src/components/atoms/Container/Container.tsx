@@ -16,7 +16,7 @@ const Container: FC<PropsWithChildren<Props>> = ({
   id,
   size,
 }) => (
-  <div
+  <section
     id={id}
     className={cn(
       className,
@@ -26,7 +26,7 @@ const Container: FC<PropsWithChildren<Props>> = ({
     )}
   >
     {children}
-  </div>
+  </section>
 );
 
 export default Container;
