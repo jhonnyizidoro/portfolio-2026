@@ -3,12 +3,13 @@
 import { type FC } from "react";
 import Link from "next/link";
 
+import { contacts } from "@/constants";
+
 import Blurred from "@/components/atoms/Blurred";
 
 import { useIsScrolled } from "@/hooks/use-is-scrolled";
 
 import { cn } from "@/utils/cn";
-import { contacts } from "@/utils/constants";
 
 import {
   EnvelopeIcon,

@@ -2,14 +2,16 @@ import type { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { contacts, sectionIds } from "@/constants";
+
 import Blurred from "@/components/atoms/Blurred";
 import Container from "@/components/atoms/Container";
 import Dot from "@/components/atoms/Dot";
 import Pointer from "@/components/atoms/Pointer";
+import ScrollButton from "@/components/atoms/ScrollButton";
 import ScrollIndicator from "@/components/atoms/ScrollIndicator";
 
 import { cn } from "@/utils/cn";
-import { contacts, sectionIds } from "@/utils/constants";
 
 import {
   ArrowRightIcon,
@@ -37,13 +39,14 @@ const Introduction: FC = () => (
         ever since the 1500s
       </p>
 
-      <Link
+      <ScrollButton
+        scrollTarget={sectionIds.aboutMe}
         className={cn(styles.button, styles.buttonAccent)}
-        href={`#${sectionIds.aboutMe}`}
+        type="button"
       >
         Know me
         <ArrowRightIcon width={20} className={styles.buttonAccentIcon} />
-      </Link>
+      </ScrollButton>
       <Blurred
         bordered
         className={styles.button}

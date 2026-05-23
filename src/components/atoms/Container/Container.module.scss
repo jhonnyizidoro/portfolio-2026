@@ -1,4 +1,11 @@
 .container {
-  width: min(1620px, 95%);
   margin-inline: auto;
+}
+
+.containerLg {
+  width: min(1620px, 95%);
+}
+
+.containerMd {
+  width: min(970px, 95%);
 }

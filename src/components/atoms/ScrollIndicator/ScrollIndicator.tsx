@@ -2,9 +2,12 @@
 
 import { type FC } from "react";
 
+import { sectionIds } from "@/constants";
+
 import { useIsScrolled } from "@/hooks/use-is-scrolled/use-is-scrolled";
 
 import { cn } from "@/utils/cn";
+import { scrollTo } from "@/utils/scrollTo";
 
 import Pointer from "../Pointer";
 
@@ -15,10 +18,9 @@ const ScrollIndicator: FC = () => {
 
   return (
     <button
-      // TODO: scroll on click
-      onClick={() => {}}
-      className={cn(styles.indicator, scrolled && styles.scrolled)}
       type="button"
+      onClick={() => scrollTo(sectionIds.aboutMe)}
+      className={cn(styles.indicator, scrolled && styles.scrolled)}
     >
       Scroll <Pointer direction="top" />
     </button>
