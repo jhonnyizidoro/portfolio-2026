@@ -2,6 +2,7 @@ import { FC, PropsWithChildren } from "react";
 import type { Metadata } from "next";
 
 import BodyBackground from "@/components/atoms/BodyBackground";
+import ActiveSection from "@/components/molecules/ActiveSection";
 import FloatingContact from "@/components/molecules/FloatingContact";
 import LanguageSwitch from "@/components/molecules/LanguageSwitch";
 
@@ -38,6 +39,7 @@ const RootLayout: FC<PropsWithChildren<Props>> = async ({
           <FloatingContact />
           <LanguageSwitch />
           <BodyBackground />
+          <ActiveSection />
           <main className={styles.content}>{children}</main>
         </body>
       </I18nProvider>

@@ -6,6 +6,7 @@ export { EnvelopeIcon } from "./EnvelopeIcon";
 export { GithubIcon } from "./GithubIcon";
 export { LinkedinIcon } from "./LinkedinIcon";
 export { PhoneIcon } from "./PhoneIcon";
+export { RectangleIcon } from "./RectangleIcon";
 export { SphereIcon } from "./SphereIcon";
 export { TranslationIcon } from "./TranslationIcon";
 export { UniversityIcon } from "./UniversityIcon";

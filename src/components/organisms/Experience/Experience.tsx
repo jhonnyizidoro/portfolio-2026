@@ -1,5 +1,7 @@
 import type { FC } from "react";
 
+import { sectionIds } from "@/constants";
+
 import Blurred from "@/components/atoms/Blurred";
 import Container from "@/components/atoms/Container";
 import Dot from "@/components/atoms/Dot";
@@ -15,7 +17,7 @@ const Experience: FC = async () => {
   const t = await getTranslations();
 
   return (
-    <div className={styles.containerWrapper}>
+    <div className={styles.containerWrapper} id={sectionIds.experience}>
       <SphereIcon className={styles.sphere} />
       <Container className={styles.container}>
         <h2 className={styles.title}>Experience</h2>

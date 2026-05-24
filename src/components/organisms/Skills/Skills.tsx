@@ -1,5 +1,7 @@
 import type { FC } from "react";
 
+import { sectionIds } from "@/constants";
+
 import Blurred from "@/components/atoms/Blurred";
 import Container from "@/components/atoms/Container";
 import OnScreen from "@/components/atoms/OnScreen";
@@ -15,7 +17,7 @@ const Skills: FC = async () => {
   const t = await getTranslations();
 
   return (
-    <Container className={styles.container}>
+    <Container className={styles.container} id={sectionIds.skills}>
       <OnScreen
         className={styles.pattern}
         hiddenClassName={styles.patternBottom}

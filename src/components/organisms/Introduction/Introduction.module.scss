@@ -9,7 +9,7 @@
 
 .left {
   padding: 40px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .heading {
@@ -29,6 +29,7 @@
 
 .myName {
   color: var(--color-accent);
+  text-shadow: 0 0 10px color-mix(var(--color-accent) 30%, transparent);
 }
 
 .text {
