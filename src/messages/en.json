@@ -1,8 +1,94 @@
 {
   "intro": {
-    "title": "Hello world!"
+    "heading": "Senior Frontend / Fullstack engineer",
+    "greeting": "Hello, I'm",
+    "text": "Fullstack engineer with 9+ years shipping production apps at scale. I build end-to-end systems and integrate AI into my workflow to move faster and deliver high quality software.",
+    "scrollButton": "Know me",
+    "contactButton": "Get in touch",
+    "frontendPill": "Frontend Engineer",
+    "backendPill": "Backend Developer",
+    "aiPill": "AI Orchestrator"
+  },
+  "aboutMe": {
+    "text": "Senior Full-Stack / Front-End Engineer with 9+ years of experience specializing in the React ecosystem (including Next.js and Remix), scalable Node.js/Javascript/TypeScript architectures, and high performance applications. Proven track record of architecting robust web platforms from scratch, modernizing complex codebases, and optimizing frontend performance to ensure seamless, low latency user experiences at scale. Adept at driving technical decisions, leveraging AI-assisted workflows, and delivering impact within distributed, international remote teams."
+  },
+  "languageSwitch": {
+    "ptBrAriaLabel": "Switch to Portuguese",
+    "enAriaLabel": "Switch to English"
+  },
+  "floatingContact": {
+    "whatsappAriaLabel": "Contact me on WhatsApp",
+    "phoneAriaLabel": "Call me",
+    "emailAriaLabel": "Send me an email",
+    "linkedinAriaLabel": "Visit my LinkedIn profile",
+    "githubAriaLabel": "Visit my GitHub profile"
+  },
+  "footer": {
+    "title": "Get in touch",
+    "phoneAriaLabel": "Call me",
+    "emailAriaLabel": "Send me an email",
+    "linkedinAriaLabel": "Visit my LinkedIn profile",
+    "resumeAriaLabel": "Download my resume",
+    "resumeDownload": "Download",
+    "resumeSuffix": "my resume"
+  },
+  "projects": {
+    "builtSubtitle": "A selection of production apps I contributed to — spanning streaming platforms, Smart TV, social impact, and B2B SaaS.",
+    "openSourceSubtitle": "Tools and side projects I built and shared publicly.",
+    "seeMore": "See more",
+    "foxText": "Smart TV streaming app delivering 24/7 local news from FOX stations across major U.S. cities, built for Tizen, WebOS, Comcast, and Vizio platforms.",
+    "globoplayText": "Brazil's largest streaming platform by Globo, delivering live TV, on-demand series, films, and sports content to millions of subscribers nationwide.",
+    "worldpulseText": "Global social impact network connecting women and allies across 233+ countries to share stories, build community, and collaborate on social change.",
+    "radargestaoText": "Brazilian legal management platform providing consulting, recruitment, and professional development courses tailored for law firms and legal departments.",
+    "sevenplaceText": "Premium used vehicle dealership in Curitiba, Brazil, offering a curated selection of luxury and high-end cars with personalized service and financing.",
+    "shiftcarText": "Luxury and super sports car dealership in Curitiba, Brazil, featuring brands like Porsche, Lamborghini, and McLaren with nationwide delivery available.",
+    "strapiGenerateTypesText": "CLI tool for Strapi V5, published on npm, that auto-generates TypeScript interfaces from your schemas, covering components, collections, single types, and dynamic zones, eliminating manual type definitions across your project.",
+    "marriageText": "Personal wedding website featuring RSVP, song requests, and a gift registry integrated with Shopify, plus an admin panel for managing invitations and guests.",
+    "foxAriaLabel": "Visit Fox Local website",
+    "globoplayAriaLabel": "Visit Globoplay website",
+    "worldpulseAriaLabel": "Visit World Pulse website",
+    "radargestaoAriaLabel": "Visit Radar Gestão website",
+    "sevenplaceAriaLabel": "Visit 7Place website",
+    "shiftcarAriaLabel": "Visit Shift Car website",
+    "strapiGenerateTypesAriaLabel": "View strapi-generate-types on GitHub",
+    "marriageAriaLabel": "View marriage project on GitHub"
+  },
+  "workflow": {
+    "title": "AI Integrated Workflow",
+    "text": "I've been integrating AI into my workflow to boost efficiency — using it to speed up research, draft boilerplate, and catch edge cases early, while keeping full ownership of architecture and technical decisions.",
+    "brainstorm": "Brainstorm and plan",
+    "aiPairing": "AI pair programming",
+    "codeReview": "Code review",
+    "tests": "Write automated tests",
+    "pullRequest": "Open pull request"
+  },
+  "achievements": {
+    "title": "Achievements",
+    "heading": "Real results from real systems — two highlights that show what I focus on: throughput and efficiency.",
+    "leftText": "At Vizabli, I scaled message processing from 10 to 200 items per second by combining queue concurrency tuning, parallelizing async operations, upgrading MongoDB, and eliminating database bottlenecks identified through profiling.",
+    "rightText": "At Fox Corporation, the Smart TV app rewrite cut memory usage in half — from 240 MB down to 120 MB — by identifying and fixing memory leaks, eliminating render overhead, reducing unnecessary state, and optimizing component lifecycles for low-end hardware.",
+    "rightFooter": "* Memory usage before vs after the full app rewrite"
+  },
+  "education": {
+    "title": "Education",
+    "degreeLabel": "Bachelor degree",
+    "degreeField": "Computer Science",
+    "degreePeriod": "2016 - 2022",
+    "degreeInstitution": "UFPR - Universidade Federal do Paraná",
+    "languagesLabel": "Languages I speak",
+    "portuguese": "Portuguese",
+    "portugueseLevel": "Native",
+    "english": "English",
+    "englishLevel": "Fluent/C1"
   },
   "skills": {
+    "frontendTitle": "Frontend",
+    "frontendText": "Core tools I use to build fast, accessible, and maintainable UIs.",
+    "backendTitle": "Backend",
+    "backendText": "Technologies I rely on to design scalable APIs and data pipelines.",
+    "miscTitle": "Miscellaneous",
+    "miscText": "DevOps, AI, and platform tools that round out my stack.",
+    "skillsSuffix": "Skills",
     "frontend": [
       "JavaScript",
       "TypeScript",
@@ -108,7 +194,8 @@
       "achievements": [
         "Rebuilt the frontend application from scratch using Remix, React Router 7, and Tailwind CSS, shipping the entire production-ready platform within a tight 6-month timeline.",
         "Optimized the UI to run smoothly on low-end hardware (2018 Tizen and WebOS models), cutting memory usage by 50% compared to the previous app version.",
-        "Wrote comprehensive unit and integration tests using Vitest and React Testing Library to ensure UI stability across different connected device manufacturers."
+        "Wrote comprehensive unit and integration tests using Vitest and React Testing Library to ensure UI stability across different connected device manufacturers.",
+        "Delivered a unified codebase targeting four distinct Smart TV platforms (Tizen, WebOS, Comcast, Vizio), eliminating per-platform forks and reducing long-term maintenance overhead."
       ],
       "stack": [
         "JavaScript",
@@ -138,7 +225,8 @@
       "achievements": [
         "Built and architected the web platform from scratch using Next.js, Node.js, and GraphQL, handling the full infrastructure setup on AWS (EC2, RDS, S3).",
         "Led technical decisions, sprint planning, task delegation, and code reviews within a distributed development team.",
-        "Managed the entire software development lifecycle, from scoping new features to deploying daily hotfixes and major releases."
+        "Managed the entire software development lifecycle, from scoping new features to deploying daily hotfixes and major releases.",
+        "Designed a type-safe API layer with GraphQL and tRPC, enabling the frontend to evolve independently from backend services without integration friction."
       ],
       "stack": [
         "JavaScript",
@@ -173,7 +261,8 @@
       "achievements": [
         "Developed user interfaces and core features for Globoplay, a high-traffic streaming application serving millions of active users.",
         "Built reusable and performant React components utilizing Canvas Web APIs, ensuring compatibility across Samsung, LG, and Sony TV platforms.",
-        "Debugged and resolved complex performance bottlenecks and memory leaks inherent to high-scale data flows on hardware-constrained systems."
+        "Debugged and resolved complex performance bottlenecks and memory leaks inherent to high-scale data flows on hardware-constrained systems.",
+        "Enforced WCAG accessibility standards across all UI components, ensuring the platform met compliance requirements on Samsung, LG, and Sony TV devices."
       ],
       "stack": [
         "JavaScript",
@@ -199,7 +288,8 @@
       "achievements": [
         "Developed a wide variety of web applications end-to-end, managing projects from initial UI layout to final cloud deployment and maintenance.",
         "Built and integrated REST and GraphQL APIs using Node.js, Express, and PHP, connecting them with SQL and MongoDB databases.",
-        "Managed direct communication with clients to gather system requirements, balance technical debt, and provide long-term technical support."
+        "Managed direct communication with clients to gather system requirements, balance technical debt, and provide long-term technical support.",
+        "Implemented PWA features including Service Workers and offline caching, alongside technical SEO optimizations that improved organic traffic and Lighthouse scores for client projects."
       ],
       "stack": [
         "JavaScript",

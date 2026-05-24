@@ -48,7 +48,6 @@ const Experience: FC = async () => {
                 </p>
               ))}
 
-              {/* TODO: vizabli stack has 4 items, reduce to 3 or change the others to 4 also */}
               <div className={styles.stackWrapper}>
                 <ul className={styles.stack}>
                   <li className={styles.stackTitle}>Stack: </li>

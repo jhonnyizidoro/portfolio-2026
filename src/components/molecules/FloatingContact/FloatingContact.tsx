@@ -18,10 +18,12 @@ import {
   PhoneIcon,
   WhatsAppIcon,
 } from "@/assets/svg";
+import { useI18n } from "@/store/i18n";
 
 import styles from "./FloatingContact.module.scss";
 
 const FloatingContact: FC = () => {
+  const { t } = useI18n();
   const scrolled = useIsScrolled({
     offset: 200,
     resetOnZeroOnly: true,
@@ -40,7 +42,7 @@ const FloatingContact: FC = () => {
         href={`https://wa.me/${contacts.whatsApp.replace("+", "")}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="WhatsApp"
+        aria-label={t.floatingContact.whatsappAriaLabel}
       >
         <WhatsAppIcon width={15} className={styles.icon} />
       </Blurred>
@@ -50,7 +52,7 @@ const FloatingContact: FC = () => {
         className={styles.iconWrapper}
         shadow="sm"
         href={`tel:${contacts.phone}`}
-        aria-label="Phone"
+        aria-label={t.floatingContact.phoneAriaLabel}
       >
         <PhoneIcon width={15} className={styles.icon} />
       </Blurred>
@@ -60,7 +62,7 @@ const FloatingContact: FC = () => {
         className={styles.iconWrapper}
         shadow="sm"
         href={`mailto:${contacts.email}`}
-        aria-label="Email"
+        aria-label={t.floatingContact.emailAriaLabel}
       >
         <EnvelopeIcon width={15} className={styles.icon} />
       </Blurred>
@@ -72,7 +74,7 @@ const FloatingContact: FC = () => {
         href={`https://linkedin.com/in/${contacts.linkedin}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="LinkedIn"
+        aria-label={t.floatingContact.linkedinAriaLabel}
       >
         <LinkedinIcon width={15} className={styles.icon} />
       </Blurred>
@@ -84,7 +86,7 @@ const FloatingContact: FC = () => {
         href={`https://github.com/${contacts.github}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="GitHub"
+        aria-label={t.floatingContact.githubAriaLabel}
       >
         <GithubIcon width={15} className={styles.icon} />
       </Blurred>

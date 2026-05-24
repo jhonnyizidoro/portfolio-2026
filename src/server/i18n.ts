@@ -6,7 +6,6 @@ import ptBr from "@/messages/pt-br.json";
 
 const messages: Record<Language, typeof en> = { en, "pt-br": ptBr };
 
-// TODO: rename to get i18n to match client context
 export const getLanguage = async (): Promise<Language> => {
   const headersList = await headers();
   return (headersList.get("x-language") as Language) ?? "en";

@@ -10,7 +10,7 @@ const BodyBackground: FC = () => (
   <div className={styles.wrapper}>
     <Image src={Waves} className={cn(styles.wave, styles.backWave)} alt="" />
     <Image src={Waves} className={cn(styles.wave, styles.frontWave)} alt="" />
-    <div className={styles.blur}></div>
+    <div className={styles.blur} />
   </div>
 );
 

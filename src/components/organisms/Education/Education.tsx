@@ -14,54 +14,61 @@ import {
   UniversityIcon,
   UsFlagIcon,
 } from "@/assets/svg";
+import { getTranslations } from "@/server/i18n";
 
 import styles from "./Education.module.scss";
 
-const Education: FC = () => (
-  <Container size="sm" id={sectionIds.education}>
-    <h2 className={styles.title}>Education</h2>
-    <div className={styles.wrapper}>
-      <SphereIcon className={cn(styles.sphere, styles.sphereTop)} />
-      <SphereIcon className={cn(styles.sphere, styles.sphereBottom)} />
+const Education: FC = async () => {
+  const { education } = await getTranslations();
 
-      <Blurred shadow="lg" className={styles.card}>
-        <h3 className={styles.header}>
-          <span className={styles.iconWrapper}>
-            <UniversityIcon className={styles.icon} width={24} />
-          </span>
-          Bachelor degree
-        </h3>
+  return (
+    <Container size="sm" id={sectionIds.education}>
+      <h2 className={styles.title}>{education.title}</h2>
+      <div className={styles.wrapper}>
+        <SphereIcon className={cn(styles.sphere, styles.sphereTop)} />
+        <SphereIcon className={cn(styles.sphere, styles.sphereBottom)} />
 
-        <div>
-          <span className={styles.text}>Computer Science</span>
-          <span className={styles.textLight}>2016 - 2022</span>
-        </div>
+        <Blurred shadow="lg" className={styles.card}>
+          <h3 className={styles.header}>
+            <span className={styles.iconWrapper}>
+              <UniversityIcon className={styles.icon} width={24} />
+            </span>
+            {education.degreeLabel}
+          </h3>
 
-        <strong className={styles.textMedium}>
-          UFPR - Universidade Federal do Paraná
-        </strong>
-      </Blurred>
+          <div>
+            <span className={styles.text}>{education.degreeField}</span>
+            <span className={styles.textLight}>{education.degreePeriod}</span>
+          </div>
 
-      <Blurred shadow="lg" className={styles.card}>
-        <h3 className={styles.header}>
-          <span className={styles.iconWrapper}>
-            <TranslationIcon className={styles.icon} width={24} />
-          </span>
-          Languages I speak
-        </h3>
+          <strong className={styles.textMedium}>
+            {education.degreeInstitution}
+          </strong>
+        </Blurred>
 
-        <div className={styles.list}>
-          <Blurred className={styles.listItem} bordered>
-            <BrFlagIcon width={20} /> Portuguese - <strong>Native</strong>
-          </Blurred>
+        <Blurred shadow="lg" className={styles.card}>
+          <h3 className={styles.header}>
+            <span className={styles.iconWrapper}>
+              <TranslationIcon className={styles.icon} width={24} />
+            </span>
+            {education.languagesLabel}
+          </h3>
 
-          <Blurred className={styles.listItem} bordered>
-            <UsFlagIcon width={20} /> English - <strong>Fluent/C1</strong>
-          </Blurred>
-        </div>
-      </Blurred>
-    </div>
-  </Container>
-);
+          <div className={styles.list}>
+            <Blurred className={styles.listItem} bordered>
+              <BrFlagIcon width={20} /> {education.portuguese} -{" "}
+              <strong>{education.portugueseLevel}</strong>
+            </Blurred>
+
+            <Blurred className={styles.listItem} bordered>
+              <UsFlagIcon width={20} /> {education.english} -{" "}
+              <strong>{education.englishLevel}</strong>
+            </Blurred>
+          </div>
+        </Blurred>
+      </div>
+    </Container>
+  );
+};
 
 export default Education;

@@ -1,8 +1,94 @@
 {
   "intro": {
-    "title": "Hello world!"
+    "heading": "Engenheiro Sênior Frontend / Fullstack",
+    "greeting": "Olá, sou o",
+    "text": "Engenheiro Fullstack com mais de 9 anos entregando aplicações em produção em escala. Construo sistemas ponta a ponta e integro IA ao meu fluxo de trabalho para entregar software de alta qualidade com mais eficiência.",
+    "scrollButton": "Me conheça",
+    "contactButton": "Entre em contato",
+    "frontendPill": "Engenheiro Frontend",
+    "backendPill": "Desenvolvedor Backend",
+    "aiPill": "Orquestrador de IA"
+  },
+  "aboutMe": {
+    "text": "Engenheiro Sênior Full-Stack / Front-End com mais de 9 anos de experiência, especializado no ecossistema React (incluindo Next.js e Remix), arquiteturas escaláveis com Node.js/JavaScript/TypeScript e aplicações de alta performance. Histórico comprovado de arquitetar plataformas web robustas do zero, modernizar codebases complexos e otimizar a performance do frontend para garantir experiências de usuário fluidas e de baixa latência em escala. Hábil em liderar decisões técnicas, aproveitar fluxos de trabalho assistidos por IA e entregar resultados em times distribuídos e internacionais."
+  },
+  "languageSwitch": {
+    "ptBrAriaLabel": "Mudar para Português",
+    "enAriaLabel": "Mudar para Inglês"
+  },
+  "floatingContact": {
+    "whatsappAriaLabel": "Me contate pelo WhatsApp",
+    "phoneAriaLabel": "Me ligue",
+    "emailAriaLabel": "Me envie um e-mail",
+    "linkedinAriaLabel": "Visite meu perfil no LinkedIn",
+    "githubAriaLabel": "Visite meu perfil no GitHub"
+  },
+  "footer": {
+    "title": "Entre em contato",
+    "phoneAriaLabel": "Me ligue",
+    "emailAriaLabel": "Me envie um e-mail",
+    "linkedinAriaLabel": "Visite meu perfil no LinkedIn",
+    "resumeAriaLabel": "Baixar meu currículo",
+    "resumeDownload": "Baixar",
+    "resumeSuffix": "meu currículo"
+  },
+  "projects": {
+    "builtSubtitle": "Uma seleção de aplicações em produção nas quais contribuí — plataformas de streaming, Smart TV, impacto social e SaaS B2B.",
+    "openSourceSubtitle": "Ferramentas e projetos pessoais que construí e compartilhei publicamente.",
+    "seeMore": "Ver mais",
+    "foxText": "Aplicativo de streaming para Smart TV com notícias locais 24/7 das emissoras FOX nos EUA para Tizen, WebOS, Comcast e Vizio.",
+    "globoplayText": "Maior plataforma de streaming do Brasil, entregando TV ao vivo, séries, filmes e conteúdo esportivo a milhões de assinantes em todo o país.",
+    "worldpulseText": "Rede de impacto social que conecta mulheres e aliados em 233+ países para compartilhar histórias e colaborar em mudanças sociais.",
+    "radargestaoText": "Plataforma de gestão jurídica com consultoria, recrutamento e cursos de desenvolvimento profissional para escritórios de advocacia.",
+    "sevenplaceText": "Concessionária premium de veículos seminovos em Curitiba, com carros de luxo, atendimento personalizado e opções de financiamento.",
+    "shiftcarText": "Concessionária de carros de luxo e superesportivos em Curitiba, com marcas como Porsche, Lamborghini e McLaren, com entrega em todo o Brasil.",
+    "strapiGenerateTypesText": "Ferramenta CLI para Strapi V5, publicada no npm, que gera automaticamente interfaces TypeScript dos seus schemas — cobrindo componentes, coleções, tipos únicos e zonas dinâmicas, eliminando definições manuais.",
+    "marriageText": "Site de casamento pessoal com confirmação de presença, pedidos de músicas e lista de presentes integrada ao Shopify, além de um painel admin para gerenciar convidados.",
+    "foxAriaLabel": "Visitar site do Fox Local",
+    "globoplayAriaLabel": "Visitar site do Globoplay",
+    "worldpulseAriaLabel": "Visitar site do World Pulse",
+    "radargestaoAriaLabel": "Visitar site do Radar Gestão",
+    "sevenplaceAriaLabel": "Visitar site da 7Place",
+    "shiftcarAriaLabel": "Visitar site da Shift Car",
+    "strapiGenerateTypesAriaLabel": "Ver strapi-generate-types no GitHub",
+    "marriageAriaLabel": "Ver projeto marriage no GitHub"
+  },
+  "workflow": {
+    "title": "Fluxo de Trabalho com IA",
+    "text": "Integrei IA ao meu fluxo de trabalho para aumentar a eficiência — usando-a para acelerar pesquisas, criar boilerplate e identificar casos extremos cedo, mantendo total controle sobre arquitetura e decisões técnicas.",
+    "brainstorm": "Brainstorm e planejamento",
+    "aiPairing": "Programação em par com IA",
+    "codeReview": "Revisão de código",
+    "tests": "Escrever testes automatizados",
+    "pullRequest": "Abrir pull request"
+  },
+  "achievements": {
+    "title": "Conquistas",
+    "heading": "Resultados reais em sistemas reais — dois destaques que mostram o que priorizo: throughput e eficiência.",
+    "leftText": "Na Vizabli, escalei o processamento de mensagens de 10 para 200 itens por segundo combinando ajuste de concorrência de filas, paralelização de operações assíncronas, atualização do MongoDB e eliminação de gargalos identificados por profiling.",
+    "rightText": "Na Fox Corporation, a reescrita do app de Smart TV reduziu o uso de memória pela metade — de 240 MB para 120 MB — identificando e corrigindo memory leaks, eliminando overhead de renderização e otimizando ciclos de vida dos componentes para hardware de baixo custo.",
+    "rightFooter": "* Uso de memória antes vs depois da reescrita completa do app"
+  },
+  "education": {
+    "title": "Educação",
+    "degreeLabel": "Bacharelado",
+    "degreeField": "Ciência da Computação",
+    "degreePeriod": "2016 - 2022",
+    "degreeInstitution": "UFPR - Universidade Federal do Paraná",
+    "languagesLabel": "Idiomas que falo",
+    "portuguese": "Português",
+    "portugueseLevel": "Nativo",
+    "english": "Inglês",
+    "englishLevel": "Fluente/C1"
   },
   "skills": {
+    "frontendTitle": "Frontend",
+    "frontendText": "Ferramentas principais que uso para criar UIs rápidas, acessíveis e de fácil manutenção.",
+    "backendTitle": "Backend",
+    "backendText": "Tecnologias que uso para projetar APIs escaláveis e pipelines de dados.",
+    "miscTitle": "Miscelânea",
+    "miscText": "Ferramentas de DevOps, IA e plataforma que completam minha stack.",
+    "skillsSuffix": "Skills",
     "frontend": [
       "JavaScript",
       "TypeScript",
@@ -62,14 +148,14 @@
   "experiences": [
     {
       "company": "Vizabli",
-      "role": "Full-Stack engineer",
+      "role": "Engenheiro Full-Stack",
       "from": "Jan 2026",
       "to": "Jun 2026",
       "achievements": [
-        "Upgraded legacy microservices, moving core dependencies from Node.js 12 to 24 and MongoDB from version 4 to 8",
-        "Refactored a 10-year-old codebase to run on modern Docker environments, fixing security flaws to bring open vulnerabilities from hundreds down to zero.",
-        "Optimized backend architecture and database index configurations, scaling application throughput from 10 to over 100+ requests per second (RPS).",
-        "Migrated version control and packages from AWS CodeArtifact to GitHub, setting up automated CI/CD pipelines with GitHub Actions"
+        "Atualizei microsserviços legados, migrando dependências principais do Node.js 12 para 24 e do MongoDB versão 4 para 8.",
+        "Refatorei um codebase com 10 anos para rodar em ambientes Docker modernos, corrigindo falhas de segurança e reduzindo vulnerabilidades abertas de centenas para zero.",
+        "Otimizei a arquitetura de backend e configurações de índices do banco de dados, escalando o throughput de 10 para mais de 100+ requisições por segundo (RPS).",
+        "Migrei controle de versão e pacotes do AWS CodeArtifact para o GitHub, configurando pipelines de CI/CD automatizados com GitHub Actions."
       ],
       "stack": [
         "JavaScript",
@@ -102,13 +188,14 @@
     },
     {
       "company": "Fox Corporation",
-      "role": "Smart TV Front-End engineer",
+      "role": "Engenheiro Frontend para Smart TV",
       "from": "Jun 2025",
-      "to": "Dec 2025",
+      "to": "Dez 2025",
       "achievements": [
-        "Rebuilt the frontend application from scratch using Remix, React Router 7, and Tailwind CSS, shipping the entire production-ready platform within a tight 6-month timeline.",
-        "Optimized the UI to run smoothly on low-end hardware (2018 Tizen and WebOS models), cutting memory usage by 50% compared to the previous app version.",
-        "Wrote comprehensive unit and integration tests using Vitest and React Testing Library to ensure UI stability across different connected device manufacturers."
+        "Reconstruí a aplicação frontend do zero com Remix, React Router 7 e Tailwind CSS, entregando a plataforma completa em produção em apenas 6 meses.",
+        "Otimizei a UI para rodar suavemente em hardware de baixo custo (modelos Tizen e WebOS de 2018), reduzindo o uso de memória em 50% em relação à versão anterior.",
+        "Escrevi testes unitários e de integração abrangentes com Vitest e React Testing Library para garantir a estabilidade da UI em diferentes fabricantes.",
+        "Entreguei uma base de código unificada para quatro plataformas distintas de Smart TV (Tizen, WebOS, Comcast, Vizio), eliminando forks por plataforma e reduzindo o overhead de manutenção."
       ],
       "stack": [
         "JavaScript",
@@ -132,13 +219,14 @@
     },
     {
       "company": "World Pulse",
-      "role": "Full-Stack engineer",
+      "role": "Engenheiro Full-Stack",
       "from": "Jan 2022",
       "to": "Jun 2025",
       "achievements": [
-        "Built and architected the web platform from scratch using Next.js, Node.js, and GraphQL, handling the full infrastructure setup on AWS (EC2, RDS, S3).",
-        "Led technical decisions, sprint planning, task delegation, and code reviews within a distributed development team.",
-        "Managed the entire software development lifecycle, from scoping new features to deploying daily hotfixes and major releases."
+        "Construí e arquitetei a plataforma web do zero com Next.js, Node.js e GraphQL, gerenciando toda a infraestrutura na AWS (EC2, RDS, S3).",
+        "Liderei decisões técnicas, planejamento de sprints, delegação de tarefas e revisões de código em um time distribuído.",
+        "Gerenciei todo o ciclo de vida do desenvolvimento de software, desde o escopo de novas features até o deploy de hotfixes diários e releases maiores.",
+        "Projetei uma camada de API type-safe com GraphQL e tRPC, permitindo que o frontend evoluísse independentemente dos serviços de backend sem fricção de integração."
       ],
       "stack": [
         "JavaScript",
@@ -167,13 +255,14 @@
     },
     {
       "company": "Globo",
-      "role": "Smart TV Front-End engineer",
+      "role": "Engenheiro Frontend para Smart TV",
       "from": "Jan 2021",
       "to": "Jan 2022",
       "achievements": [
-        "Developed user interfaces and core features for Globoplay, a high-traffic streaming application serving millions of active users.",
-        "Built reusable and performant React components utilizing Canvas Web APIs, ensuring compatibility across Samsung, LG, and Sony TV platforms.",
-        "Debugged and resolved complex performance bottlenecks and memory leaks inherent to high-scale data flows on hardware-constrained systems."
+        "Desenvolvi interfaces e funcionalidades principais do Globoplay, aplicação de streaming de alto tráfego com milhões de usuários ativos.",
+        "Construí componentes React reutilizáveis e performáticos com Canvas Web APIs, garantindo compatibilidade entre TVs Samsung, LG e Sony.",
+        "Depurei e resolvi gargalos de performance e memory leaks em fluxos de dados de alta escala em sistemas com restrições de hardware.",
+        "Implementei padrões de acessibilidade WCAG em todos os componentes de UI, garantindo conformidade da plataforma em TVs Samsung, LG e Sony."
       ],
       "stack": [
         "JavaScript",
@@ -193,13 +282,14 @@
     },
     {
       "company": "Freelancer",
-      "role": "Fullstack developer",
+      "role": "Desenvolvedor Fullstack",
       "from": "Jan 2017",
       "to": "Jan 2021",
       "achievements": [
-        "Developed a wide variety of web applications end-to-end, managing projects from initial UI layout to final cloud deployment and maintenance.",
-        "Built and integrated REST and GraphQL APIs using Node.js, Express, and PHP, connecting them with SQL and MongoDB databases.",
-        "Managed direct communication with clients to gather system requirements, balance technical debt, and provide long-term technical support."
+        "Desenvolvi uma ampla variedade de aplicações web ponta a ponta, gerenciando projetos do layout inicial ao deploy em nuvem e manutenção.",
+        "Construí e integrei APIs REST e GraphQL com Node.js, Express e PHP, conectando-as a bancos de dados SQL e MongoDB.",
+        "Gerenciei comunicação direta com clientes para levantar requisitos, equilibrar dívida técnica e oferecer suporte técnico de longo prazo.",
+        "Implementei funcionalidades PWA com Service Workers e cache offline, além de otimizações de SEO técnico que melhoraram o tráfego orgânico e os scores no Lighthouse."
       ],
       "stack": [
         "JavaScript",

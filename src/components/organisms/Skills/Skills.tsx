@@ -14,7 +14,7 @@ import { getTranslations } from "@/server/i18n";
 import styles from "./Skills.module.scss";
 
 const Skills: FC = async () => {
-  const t = await getTranslations();
+  const { skills, experiences } = await getTranslations();
 
   return (
     <Container className={styles.container} id={sectionIds.skills}>
@@ -31,17 +31,16 @@ const Skills: FC = async () => {
 
       <Blurred shadow="lg" className={styles.card}>
         <h2 className={styles.title}>
-          <strong className={styles.titleAccent}>Frontend</strong> Skills
+          <strong className={styles.titleAccent}>{skills.frontendTitle}</strong>{" "}
+          {skills.skillsSuffix}
         </h2>
-        <span className={styles.text}>
-          Check the skills I have experience with, and for how long
-        </span>
+        <span className={styles.text}>{skills.frontendText}</span>
         <ul className={styles.list}>
-          {t.skills.frontend.map((s) => (
+          {skills.frontend.map((s) => (
             <Blurred className={styles.skill} key={s} as="li" bordered>
               {s}
               <span className={styles.time}>
-                {getSkillYears(s, t.experiences)}yr
+                {getSkillYears(s, experiences)}yr
               </span>
             </Blurred>
           ))}
@@ -50,17 +49,16 @@ const Skills: FC = async () => {
 
       <Blurred shadow="lg" className={cn(styles.card, styles.cardHigh)}>
         <h2 className={styles.title}>
-          <strong className={styles.titlePurple}>Backend</strong> Skills
+          <strong className={styles.titlePurple}>{skills.backendTitle}</strong>{" "}
+          {skills.skillsSuffix}
         </h2>
-        <span className={styles.text}>
-          Check the skills I have experience with, and for how long
-        </span>
+        <span className={styles.text}>{skills.backendText}</span>
         <ul className={styles.list}>
-          {t.skills.backend.map((s) => (
+          {skills.backend.map((s) => (
             <Blurred className={styles.skill} key={s} as="li" bordered>
               {s}
               <span className={styles.time}>
-                {getSkillYears(s, t.experiences)}yr
+                {getSkillYears(s, experiences)}yr
               </span>
             </Blurred>
           ))}
@@ -75,11 +73,11 @@ const Skills: FC = async () => {
           Check the skills I have experience with, and for how long
         </span>
         <ul className={styles.list}>
-          {t.skills.misc.map((s) => (
+          {skills.misc.map((s) => (
             <Blurred className={styles.skill} key={s} as="li" bordered>
               {s}
               <span className={styles.time}>
-                {getSkillYears(s, t.experiences)}yr
+                {getSkillYears(s, experiences)}yr
               </span>
             </Blurred>
           ))}
