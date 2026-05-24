@@ -1,0 +1,75 @@
+.container {
+  display: grid;
+  grid-template-columns: 70% auto;
+  gap: 40px;
+}
+
+.card {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.titleGreen {
+  color: var(--color-accent);
+  font-weight: var(--weight-bold);
+}
+
+.titlePurple {
+  color: var(--color-purple);
+  font-weight: var(--weight-bold);
+}
+
+.subtitle {
+  font-size: 15px;
+  margin-block: 10px 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.itemCard {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text {
+  margin-block: 10px 20px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.link {
+  padding: 10px 15px;
+  display: inline-flex;
+  gap: 20px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: var(--weight-semibold);
+}
+
+.linkIcon {
+  fill: var(--color-t2);
+}
+
+.repositoriesWrapper {
+  display: grid;
+  gap: 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: var(--weight-semibold);
+}
+
+.headerIcon {
+  fill: var(--color-t2);
+}

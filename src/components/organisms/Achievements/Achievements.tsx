@@ -4,8 +4,8 @@ import { sectionIds } from "@/constants";
 
 import Blurred from "@/components/atoms/Blurred";
 import Container from "@/components/atoms/Container";
-import RadialBarChart from "@/components/atoms/RadialBarChart";
 import BarChart from "@/components/molecules/BarChart";
+import RadialBarChart from "@/components/molecules/RadialBarChart";
 
 import { cn } from "@/utils/cn";
 

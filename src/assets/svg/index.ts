@@ -5,6 +5,7 @@ export { CodeIcon } from "./CodeIcon";
 export { ConfigIcon } from "./ConfigIcon";
 export { EnvelopeIcon } from "./EnvelopeIcon";
 export { EyeIcon } from "./EyeIcon";
+export { ForkIcon } from "./ForkIcon";
 export { GithubIcon } from "./GithubIcon";
 export { LampIcon } from "./LampIcon";
 export { LightningIcon } from "./LightningIcon";
