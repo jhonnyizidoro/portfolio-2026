@@ -20,8 +20,6 @@ const HomePage: FC = async () => {
       <Achievements />
       <Workflow />
       <Projects />
-      {/* TODO: delete */}
-      <div style={{ height: 1000 }} />
     </>
   );
 };

@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import BodyBackground from "@/components/atoms/BodyBackground";
 import ActiveSection from "@/components/molecules/ActiveSection";
 import FloatingContact from "@/components/molecules/FloatingContact";
+import Footer from "@/components/molecules/Footer";
 import LanguageSwitch from "@/components/molecules/LanguageSwitch";
 
 import { Language } from "@/@types/i18n";
@@ -41,6 +42,7 @@ const RootLayout: FC<PropsWithChildren<Props>> = async ({
           <BodyBackground />
           <ActiveSection />
           <main className={styles.content}>{children}</main>
+          <Footer />
         </body>
       </I18nProvider>
     </html>

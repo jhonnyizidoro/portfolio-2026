@@ -1,0 +1,54 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-block: 240px;
+  overflow: hidden;
+}
+
+.sphere {
+  position: absolute;
+  left: -10vw;
+  bottom: -10vw;
+  width: 30vw;
+  filter: drop-shadow(0 0 40px rgb(0 0 0 / 10%));
+  animation: drift 7s ease-in-out infinite;
+}
+
+.title {
+  color: var(--color-t2);
+  font-weight: var(--weight-semibold);
+  margin-bottom: 50px;
+}
+
+.link {
+  display: block;
+  margin-top: 20px;
+}
+
+.linkStrong {
+  color: var(--color-accent);
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    translate: 0 0;
+    scale: 1;
+  }
+
+  25% {
+    translate: 10px -14px;
+    scale: 1.03;
+  }
+
+  60% {
+    translate: -6px -20px;
+    scale: 1;
+  }
+
+  80% {
+    translate: 5px -10px;
+    scale: 1.02;
+  }
+}
