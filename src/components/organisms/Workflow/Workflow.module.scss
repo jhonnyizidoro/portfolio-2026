@@ -1,0 +1,58 @@
+.container {
+  // TODO: standardize this spacing using css variables
+  margin-block: 170px;
+}
+
+.title {
+  text-align: center;
+  color: var(--color-t2);
+}
+
+.text {
+  font-size: 18px;
+  text-align: center;
+  margin-block: 40px 80px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.itemWrapper {
+  position: relative;
+
+  &:not(:last-child) {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      background-image: repeating-linear-gradient(
+        to bottom,
+        color-mix(in srgb, var(--color-t2) 30%, transparent) 0,
+        color-mix(in srgb, var(--color-t2) 30%, transparent) 8px,
+        transparent 8px,
+        transparent 16px
+      );
+      width: 1px;
+      height: calc(100% - 100px);
+      top: 50px;
+    }
+  }
+}
+
+.itemWrapperEven {
+  padding-top: 150px;
+}
+
+.item {
+  width: 120%;
+  margin-left: -10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 99px;
+}
