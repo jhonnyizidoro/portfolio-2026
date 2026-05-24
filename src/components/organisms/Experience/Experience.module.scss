@@ -12,7 +12,7 @@
 }
 
 .container {
-  margin-block: 170px;
+  margin-block: var(--section-spacing);
 }
 
 .title {
@@ -26,7 +26,8 @@
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 170px 140px;
+  gap: calc(var(--responsive-spacing) * 170)
+    calc(var(--responsive-spacing) * 140);
   position: relative;
   align-items: start;
 
@@ -63,7 +64,7 @@
 .card {
   position: relative;
   border-radius: 10px;
-  padding: 30px;
+  padding: calc(var(--responsive-spacing) * 30);
 
   &::after,
   &::before {
@@ -76,7 +77,7 @@
   // Horizontal line
   &::after {
     height: 2px;
-    width: 70px;
+    width: calc(var(--responsive-spacing) * 70);
   }
 
   // Arrowhead at end of horizontal line
@@ -97,7 +98,7 @@
   }
 
   &::before {
-    right: -70px;
+    right: calc(var(--responsive-spacing) * 70 * -1);
     border-right: 5px solid var(--color-accent);
   }
 }
@@ -112,7 +113,7 @@
   }
 
   &::before {
-    left: -70px;
+    left: calc(var(--responsive-spacing) * 70 * -1);
     border-left: 5px solid var(--color-accent);
   }
 }
@@ -121,6 +122,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .role {
@@ -137,8 +139,9 @@
 
 .date {
   font-size: 14px;
-  padding: 5px 15px;
+  padding: 5px calc(var(--responsive-spacing) * 15);
   border-radius: 99px;
+  white-space: nowrap;
 }
 
 .achievement {

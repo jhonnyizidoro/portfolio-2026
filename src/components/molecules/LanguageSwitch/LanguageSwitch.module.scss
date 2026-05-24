@@ -1,7 +1,7 @@
 .wrapper {
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: calc(var(--responsive-spacing) * 30);
+  top: calc(var(--responsive-spacing) * 30);
   z-index: 1;
   padding: 13px 26px;
   border-radius: 99px;

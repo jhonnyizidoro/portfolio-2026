@@ -22,7 +22,7 @@ const Education: FC = async () => {
   const { education } = await getTranslations();
 
   return (
-    <Container size="sm" id={sectionIds.education}>
+    <Container size="sm" id={sectionIds.education} className={styles.container}>
       <h2 className={styles.title}>{education.title}</h2>
       <div className={styles.wrapper}>
         <SphereIcon className={cn(styles.sphere, styles.sphereTop)} />

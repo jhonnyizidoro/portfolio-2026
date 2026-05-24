@@ -3,10 +3,11 @@
   grid-template-columns: 70% auto;
   gap: 40px;
   position: relative;
+  margin-block: var(--section-spacing);
 }
 
 .card {
-  padding: 40px;
+  padding: calc(var(--responsive-spacing) * 40);
   border-radius: 10px;
 }
 
@@ -32,11 +33,11 @@
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  gap: calc(var(--responsive-spacing) * 40);
 }
 
 .itemCard {
-  padding: 20px;
+  padding: calc(var(--responsive-spacing) * 20);
   border-radius: 10px;
 }
 
@@ -54,6 +55,11 @@
   margin-block: 10px 20px;
   font-size: 15px;
   line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .link {
@@ -71,7 +77,7 @@
 
 .repositoriesWrapper {
   display: grid;
-  gap: 40px;
+  gap: calc(var(--responsive-spacing) * 40);
 }
 
 .header {

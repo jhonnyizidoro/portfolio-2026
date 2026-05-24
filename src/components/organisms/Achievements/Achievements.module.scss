@@ -1,5 +1,6 @@
 .container {
   position: relative;
+  margin-block: var(--section-spacing);
 }
 
 .rectangle {
@@ -19,7 +20,7 @@
 }
 
 .card {
-  padding: 40px;
+  padding: calc(var(--responsive-spacing) * 40);
   border-radius: 10px;
 }
 
@@ -72,7 +73,7 @@
 .chartWrapper {
   display: grid;
   grid-template-columns: 40% auto;
-  gap: 80px;
+  gap: calc(var(--responsive-spacing) * 80);
 }
 
 .leftTet {

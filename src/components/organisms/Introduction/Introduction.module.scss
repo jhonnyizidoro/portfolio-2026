@@ -1,14 +1,14 @@
 .container {
   display: grid;
-  grid-template-columns: auto minmax(650px, 820px);
-  gap: 140px;
+  grid-template-columns: auto minmax(280px, 820px);
+  gap: calc(var(--responsive-spacing) * 140);
   height: max(100vh, 650px);
   align-items: center;
   position: relative;
 }
 
 .left {
-  padding: 40px;
+  padding: calc(var(--responsive-spacing) * 40);
   border-radius: 10px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .title {
-  font-size: 64px;
+  font-size: max(calc(var(--responsive-spacing) * 64), 48px);
   font-weight: var(--weight-extrabold);
   margin-block: 30px 15px;
 }
@@ -35,7 +35,7 @@
 .text {
   font-size: 20px;
   line-height: 1.7;
-  margin-bottom: 50px;
+  margin-bottom: calc(var(--responsive-spacing) * 50);
 }
 
 .button {
@@ -66,31 +66,31 @@
 
 .pill {
   position: absolute;
-  width: clamp(280px, 17.7vw, 340px);
+  width: clamp(250px, 17.7vw, 340px);
   display: flex;
   align-items: center;
   z-index: 1;
 }
 
 .leftPill {
-  bottom: 30px;
-  right: calc(50% + 70px);
+  bottom: calc(var(--responsive-spacing) * 30);
+  right: calc(50% + calc(var(--responsive-spacing) * 70));
 }
 
 .centerPill {
-  bottom: 170px;
+  bottom: calc(var(--responsive-spacing) * 170);
   right: 50%;
 }
 
 .rightPill {
-  bottom: 80px;
-  left: calc(50% + 60px);
+  bottom: calc(var(--responsive-spacing) * 80);
+  left: calc(50% + calc(var(--responsive-spacing) * 60));
 }
 
 .pillContent {
   padding: 15px 0;
   display: flex;
-  gap: 20px;
+  gap: calc(var(--responsive-spacing) * 20);
   align-items: center;
   justify-content: center;
   border-radius: 99px;
@@ -106,8 +106,8 @@
 }
 
 .imageCommon {
-  width: 210px;
-  height: 210px;
+  width: calc(var(--responsive-spacing) * 210);
+  height: calc(var(--responsive-spacing) * 210);
   border-radius: 50%;
 }
 

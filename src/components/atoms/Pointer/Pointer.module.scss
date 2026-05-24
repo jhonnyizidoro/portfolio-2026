@@ -14,6 +14,10 @@
   }
 }
 
+.responsivePointer {
+  max-width: calc(var(--responsive-spacing) * 70);
+}
+
 .horizontalPointer {
   height: 1px;
   width: 70px;

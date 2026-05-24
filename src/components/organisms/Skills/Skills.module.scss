@@ -1,13 +1,13 @@
 .container {
   display: grid;
   grid-template-columns: 70% auto;
-  gap: 40px;
+  gap: calc(var(--responsive-spacing) * 40);
   position: relative;
-  margin-block: 170px;
+  margin-block: var(--section-spacing);
 }
 
 .card {
-  padding: 40px;
+  padding: calc(var(--responsive-spacing) * 40);
   border-radius: 10px;
 }
 
@@ -46,8 +46,8 @@
 
 .skill {
   display: inline-flex;
-  gap: 40px;
-  padding: 15px;
+  gap: calc(var(--responsive-spacing) * 40);
+  padding: calc(var(--responsive-spacing) * 15);
   border-radius: 10px;
 }
 

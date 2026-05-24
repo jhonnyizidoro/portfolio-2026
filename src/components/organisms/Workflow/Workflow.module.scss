@@ -1,6 +1,5 @@
 .container {
-  // TODO: standardize this spacing using css variables
-  margin-block: 170px;
+  margin-block: var(--section-spacing);
 }
 
 .title {

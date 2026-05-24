@@ -85,7 +85,7 @@ const Introduction: FC = async () => {
             <WebPageIcon width={20} className={styles.pillIcon} />{" "}
             {intro.frontendPill}
           </Blurred>
-          <Pointer direction="right" />
+          <Pointer direction="right" responsive />
         </div>
 
         <div className={cn(styles.pill, styles.centerPill)}>
@@ -93,11 +93,11 @@ const Introduction: FC = async () => {
             <ConfigIcon width={20} className={styles.pillIcon} />{" "}
             {intro.backendPill}
           </Blurred>
-          <Pointer direction="right" />
+          <Pointer direction="right" responsive />
         </div>
 
         <div className={cn(styles.pill, styles.rightPill)}>
-          <Pointer direction="left" />
+          <Pointer direction="left" responsive />
           <Blurred className={styles.pillContent} shadow="md">
             <ChipIcon width={20} className={styles.pillIcon} /> {intro.aiPill}
           </Blurred>

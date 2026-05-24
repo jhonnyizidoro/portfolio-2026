@@ -12,6 +12,8 @@
   --weight-bold: 700;
   --weight-extrabold: 800;
   --weight-black: 900;
+  --responsive-spacing: clamp(0.5px, 0.0781vw - 0.5px, 1px);
+  --section-spacing: max(calc(var(--responsive-spacing) * 170), 120px);
 }
 
 html {
