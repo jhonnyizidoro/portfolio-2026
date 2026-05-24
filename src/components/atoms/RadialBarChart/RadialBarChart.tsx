@@ -1,6 +1,8 @@
 "use client";
 
-import type { FC } from "react";
+import { type FC, useRef } from "react";
+
+import { useOnScreen } from "@/hooks/use-on-screen";
 
 import { cn } from "@/utils/cn";
 
@@ -21,9 +23,15 @@ const center = SIZE / 2;
 
 const RadialBarChart: FC<Props> = ({ percentage, color, label }) => {
   const offset = circumference - (percentage / 100) * circumference;
+  const ref = useRef<HTMLDivElement>(null);
+  const onScreen = useOnScreen(ref);
 
   return (
-    <div className={styles.wrapper} style={{ width: SIZE, height: SIZE }}>
+    <div
+      className={styles.wrapper}
+      style={{ width: SIZE, height: SIZE }}
+      ref={ref}
+    >
       <svg width={SIZE} height={SIZE} className={styles.svg}>
         <circle
           cx={center}
@@ -40,7 +48,7 @@ const RadialBarChart: FC<Props> = ({ percentage, color, label }) => {
           fill="none"
           strokeWidth={STROKE}
           strokeDasharray={circumference}
-          strokeDashoffset={offset}
+          strokeDashoffset={onScreen ? offset : circumference}
           className={cn(
             color === "red" && styles.progressRed,
             color === "green" && styles.progressGreen,

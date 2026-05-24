@@ -10,11 +10,13 @@
 .progressRed {
   stroke: var(--color-red);
   filter: drop-shadow(0 0 6px var(--color-red));
+  transition: stroke-dashoffset 1.4s ease;
 }
 
 .progressGreen {
   stroke: var(--color-accent);
   filter: drop-shadow(0 0 6px var(--color-accent));
+  transition: stroke-dashoffset 1.8s ease;
 }
 
 .label {
