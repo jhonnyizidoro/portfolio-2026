@@ -7,7 +7,7 @@ import Container from "@/components/atoms/Container";
 import styles from "./AboutMe.module.scss";
 
 const AboutMe: FC = () => (
-  <Container size="md" id={sectionIds.aboutMe} className={styles.aboutMe}>
+  <Container size="sm" id={sectionIds.aboutMe} className={styles.aboutMe}>
     Senior Full-Stack / Front-End Engineer with 9+ years of experience
     specializing in the React ecosystem (including Next.js and Remix), scalable
     Node.js/Javascript/TypeScript architectures, and high performance

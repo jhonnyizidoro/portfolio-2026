@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+}
+
+.svg {
+  transform: rotate(90deg);
+  overflow: visible;
+}
+
+.progressRed {
+  stroke: var(--color-red);
+  filter: drop-shadow(0 0 6px var(--color-red));
+}
+
+.progressGreen {
+  stroke: var(--color-accent);
+  filter: drop-shadow(0 0 6px var(--color-accent));
+}
+
+.label {
+  font-size: 18px;
+  font-weight: var(--weight-bold);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}

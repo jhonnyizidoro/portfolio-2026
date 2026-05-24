@@ -7,7 +7,7 @@ import styles from "./Container.module.scss";
 type Props = {
   className?: string;
   id?: string;
-  size?: "lg" | "md";
+  size?: "lg" | "md" | "sm";
 };
 
 const Container: FC<PropsWithChildren<Props>> = ({
@@ -23,6 +23,7 @@ const Container: FC<PropsWithChildren<Props>> = ({
       styles.container,
       (!size || size === "lg") && styles.containerLg,
       size === "md" && styles.containerMd,
+      size === "sm" && styles.containerSm,
     )}
   >
     {children}

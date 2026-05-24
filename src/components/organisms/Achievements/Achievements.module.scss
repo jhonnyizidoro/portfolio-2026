@@ -1,0 +1,105 @@
+.container {
+  position: relative;
+}
+
+.rectangle {
+  position: absolute;
+  filter: drop-shadow(0 0 30px rgb(0 0 0 / 15%));
+  width: 70%;
+}
+
+.rectangleTop {
+  top: -30px;
+  left: 20px;
+}
+
+.rectangleBottom {
+  top: 150px;
+  left: -30px;
+}
+
+.card {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.chart {
+  height: 11px;
+  width: 7px;
+  border-radius: 2px;
+  background: color-mix(var(--color-t2) 10%, transparent);
+  position: relative;
+  margin-bottom: -4px;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    width: 7px;
+    border-radius: 2px;
+    bottom: 0;
+    position: absolute;
+  }
+
+  &::after {
+    height: 17px;
+    background: color-mix(var(--color-t2) 40%, transparent);
+    left: 10px;
+  }
+
+  &::before {
+    height: 22px;
+    background: color-mix(var(--color-t2) 100%, transparent);
+    left: 20px;
+  }
+}
+
+.title {
+  font-size: 20px;
+  color: var(--color-accent);
+}
+
+.text {
+  margin-block: 5px 50px;
+}
+
+.chartWrapper {
+  display: grid;
+  grid-template-columns: 40% auto;
+  gap: 80px;
+}
+
+.leftTet {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 40px;
+}
+
+.right {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.rightWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 50px;
+}
+
+.rightText {
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.rightFooterText {
+  font-size: 15px;
+  display: block;
+  text-align: center;
+}

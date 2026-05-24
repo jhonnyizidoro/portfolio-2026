@@ -26,8 +26,8 @@ export function RectangleIcon(props: SVGProps<SVGSVGElement>) {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(245.479 58.8634) rotate(-1.34456) scale(457.65 468.691)"
         >
-          <stop stop-color="#18191B" />
-          <stop offset="1" stop-color="#222427" />
+          <stop stopColor="#18191B" />
+          <stop offset="1" stopColor="#222427" />
         </radialGradient>
       </defs>
     </svg>

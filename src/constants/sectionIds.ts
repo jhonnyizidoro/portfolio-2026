@@ -4,4 +4,5 @@ export const sectionIds = {
   education: "education",
   experience: "experience",
   skills: "skills",
+  achievement: "achievement",
 } as const;

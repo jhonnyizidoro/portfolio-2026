@@ -18,7 +18,7 @@ import {
 import styles from "./Education.module.scss";
 
 const Education: FC = () => (
-  <Container size="md" id={sectionIds.education}>
+  <Container size="sm" id={sectionIds.education}>
     <h2 className={styles.title}>Education</h2>
     <div className={styles.wrapper}>
       <SphereIcon className={cn(styles.sphere, styles.sphereTop)} />

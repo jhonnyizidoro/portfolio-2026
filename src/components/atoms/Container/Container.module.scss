@@ -7,5 +7,9 @@
 }
 
 .containerMd {
+  width: min(1200px, 95%);
+}
+
+.containerSm {
   width: min(970px, 95%);
 }

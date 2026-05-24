@@ -1,6 +1,7 @@
 import type { FC } from "react";
 
 import AboutMe from "@/components/organisms/AboutMe";
+import Achievements from "@/components/organisms/Achievements";
 import Education from "@/components/organisms/Education";
 import Experience from "@/components/organisms/Experience";
 import Introduction from "@/components/organisms/Introduction";
@@ -14,6 +15,7 @@ const HomePage: FC = async () => {
       <Skills />
       <Education />
       <Experience />
+      <Achievements />
       {/* TODO: delete */}
       <div style={{ height: 1000 }} />
     </>
