@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 70% auto;
   gap: 40px;
+  position: relative;
 }
 
 .card {
@@ -72,4 +73,40 @@
 
 .headerIcon {
   fill: var(--color-t2);
+}
+
+.pattern {
+  position: absolute;
+  background-image: radial-gradient(
+    circle,
+    rgb(255 255 255 / 18%) 1px,
+    transparent 1px
+  );
+  background-size: 14px 14px;
+  width: 240px;
+  height: 240px;
+  border-radius: 40px;
+  transition: 1s;
+}
+
+.patternBottom {
+  bottom: 0;
+  left: 0;
+  scale: 0.7;
+}
+
+.patternBottomVisible {
+  bottom: -60px;
+  left: -60px;
+}
+
+.patternTop {
+  top: 0;
+  right: 0;
+  scale: 0.7;
+}
+
+.patternTopVisible {
+  top: -60px;
+  right: -60px;
 }

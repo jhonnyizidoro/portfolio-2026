@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import Blurred from "@/components/atoms/Blurred";
 import Container from "@/components/atoms/Container";
+import OnScreen from "@/components/atoms/OnScreen";
 
 import { ArrowRightIcon, ForkIcon } from "@/assets/svg";
 
@@ -19,6 +20,17 @@ import styles from "./Projects.module.scss";
 // TODO: normalize logos sizes in UI
 const Projects: FC = () => (
   <Container className={styles.container}>
+    <OnScreen
+      className={styles.pattern}
+      hiddenClassName={styles.patternBottom}
+      onScreenClassName={styles.patternBottomVisible}
+    />
+    <OnScreen
+      className={styles.pattern}
+      hiddenClassName={styles.patternTop}
+      onScreenClassName={styles.patternTopVisible}
+    />
+
     <Blurred className={styles.card} shadow="lg">
       <h2 className={styles.title}>
         Some <strong className={styles.titleGreen}>projects</strong> I built
