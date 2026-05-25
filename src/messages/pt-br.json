@@ -156,176 +156,178 @@
       "Tizen"
     ]
   },
-  "experienceTitle": "Experiência",
-  "experiences": [
-    {
-      "company": "Vizabli",
-      "role": "Engenheiro Full-Stack",
-      "from": "Jan 2026",
-      "to": "Jun 2026",
-      "achievements": [
-        "Atualizei microsserviços legados, migrando dependências principais do Node.js 12 para 24 e do MongoDB versão 4 para 8.",
-        "Refatorei um codebase com 10 anos para rodar em ambientes Docker modernos, corrigindo falhas de segurança e reduzindo vulnerabilidades abertas de centenas para zero.",
-        "Otimizei a arquitetura de backend e configurações de índices do banco de dados, escalando o throughput de 10 para mais de 100+ requisições por segundo (RPS).",
-        "Migrei controle de versão e pacotes do AWS CodeArtifact para o GitHub, configurando pipelines de CI/CD automatizados com GitHub Actions."
-      ],
-      "stack": [
-        "JavaScript",
-        "TypeScript",
-        "Node.js",
-        "React",
-        "SASS",
-        "Vite",
-        "Styled Components",
-        "CSS Modules",
-        "AWS ECR",
-        "AWS S3",
-        "AWS EC2",
-        "AWS CodeArtifact",
-        "MongoDB",
-        "Elasticsearch",
-        "Redux",
-        "Zustand",
-        "Redis",
-        "Bull",
-        "RabbitMQ",
-        "GitHub Actions",
-        "CI/CD",
-        "Docker",
-        "LLMs",
-        "Vitest",
-        "Jest",
-        "React Testing Library"
-      ]
-    },
-    {
-      "company": "Fox Corporation",
-      "role": "Engenheiro Frontend para Smart TV",
-      "from": "Jun 2025",
-      "to": "Dez 2025",
-      "achievements": [
-        "Reconstruí a aplicação frontend do zero com Remix, React Router 7 e Tailwind CSS, entregando a plataforma completa em produção em apenas 6 meses.",
-        "Otimizei a UI para rodar suavemente em hardware de baixo custo (modelos Tizen e WebOS de 2018), reduzindo o uso de memória em 50% em relação à versão anterior.",
-        "Escrevi testes unitários e de integração abrangentes com Vitest e React Testing Library para garantir a estabilidade da UI em diferentes fabricantes.",
-        "Entreguei uma base de código unificada para quatro plataformas distintas de Smart TV (Tizen, WebOS, Comcast, Vizio), eliminando forks por plataforma e reduzindo o overhead de manutenção."
-      ],
-      "stack": [
-        "JavaScript",
-        "TypeScript",
-        "Remix",
-        "React Router 7",
-        "Tailwind CSS",
-        "SASS",
-        "Firebase",
-        "Tizen",
-        "WebOS",
-        "Comcast",
-        "Vizio",
-        "CI/CD",
-        "LLMs",
-        "Vitest",
-        "Jest",
-        "Cypress",
-        "React Testing Library"
-      ]
-    },
-    {
-      "company": "World Pulse",
-      "role": "Engenheiro Full-Stack",
-      "from": "Jan 2022",
-      "to": "Jun 2025",
-      "achievements": [
-        "Construí e arquitetei a plataforma web do zero com Next.js, Node.js e GraphQL, gerenciando toda a infraestrutura na AWS (EC2, RDS, S3).",
-        "Liderei decisões técnicas, planejamento de sprints, delegação de tarefas e revisões de código em um time distribuído.",
-        "Gerenciei todo o ciclo de vida do desenvolvimento de software, desde o escopo de novas features até o deploy de hotfixes diários e releases maiores.",
-        "Projetei uma camada de API type-safe com GraphQL e tRPC, permitindo que o frontend evoluísse independentemente dos serviços de backend sem fricção de integração."
-      ],
-      "stack": [
-        "JavaScript",
-        "TypeScript",
-        "Next.js",
-        "Node.js",
-        "GraphQL",
-        "React Query",
-        "tRPC",
-        "Directus",
-        "PostgreSQL",
-        "NestJS",
-        "AWS RDS",
-        "AWS EC2",
-        "AWS S3",
-        "REST API",
-        "Firebase",
-        "CI/CD",
-        "Vite",
-        "Webpack",
-        "Redux",
-        "SASS",
-        "CSS Modules",
-        "Styled Components",
-        "E2E Testing",
-        "Jest"
-      ]
-    },
-    {
-      "company": "Globo",
-      "role": "Engenheiro Frontend para Smart TV",
-      "from": "Jan 2021",
-      "to": "Jan 2022",
-      "achievements": [
-        "Desenvolvi interfaces e funcionalidades principais do Globoplay, aplicação de streaming de alto tráfego com milhões de usuários ativos.",
-        "Construí componentes React reutilizáveis e performáticos com Canvas Web APIs, garantindo compatibilidade entre TVs Samsung, LG e Sony.",
-        "Depurei e resolvi gargalos de performance e memory leaks em fluxos de dados de alta escala em sistemas com restrições de hardware.",
-        "Implementei padrões de acessibilidade WCAG em todos os componentes de UI, garantindo conformidade da plataforma em TVs Samsung, LG e Sony."
-      ],
-      "stack": [
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-        "Canvas API",
-        "WebOS",
-        "Tizen",
-        "WCAG",
-        "Vitest",
-        "Jest",
-        "Cypress",
-        "React Testing Library"
-      ]
-    },
-    {
-      "company": "Freelancer",
-      "role": "Desenvolvedor Fullstack",
-      "from": "Jan 2017",
-      "to": "Jan 2021",
-      "achievements": [
-        "Desenvolvi uma ampla variedade de aplicações web ponta a ponta, gerenciando projetos do layout inicial ao deploy em nuvem e manutenção.",
-        "Construí e integrei APIs REST e GraphQL com Node.js, Express e PHP, conectando-as a bancos de dados SQL e MongoDB.",
-        "Gerenciei comunicação direta com clientes para levantar requisitos, equilibrar dívida técnica e oferecer suporte técnico de longo prazo.",
-        "Implementei funcionalidades PWA com Service Workers e cache offline, além de otimizações de SEO técnico que melhoraram o tráfego orgânico e os scores no Lighthouse."
-      ],
-      "stack": [
-        "JavaScript",
-        "TypeScript",
-        "Node.js",
-        "Express",
-        "PHP",
-        "Laravel",
-        "CodeIgniter",
-        "React",
-        "Vue",
-        "Next.js",
-        "GraphQL",
-        "SQL",
-        "MongoDB",
-        "SASS",
-        "Webpack",
-        "Gulp",
-        "Service Workers",
-        "Cloudflare",
-        "SEO"
-      ]
-    }
-  ]
+  "experience": {
+    "experienceTitle": "Experiência",
+    "experiences": [
+      {
+        "company": "Vizabli",
+        "role": "Engenheiro Full-Stack",
+        "from": "Jan 2026",
+        "to": "Jun 2026",
+        "achievements": [
+          "Atualizei microsserviços legados, migrando dependências principais do Node.js 12 para 24 e do MongoDB versão 4 para 8.",
+          "Refatorei um codebase com 10 anos para rodar em ambientes Docker modernos, corrigindo falhas de segurança e reduzindo vulnerabilidades abertas de centenas para zero.",
+          "Otimizei a arquitetura de backend e configurações de índices do banco de dados, escalando o throughput de 10 para mais de 100+ requisições por segundo (RPS).",
+          "Migrei controle de versão e pacotes do AWS CodeArtifact para o GitHub, configurando pipelines de CI/CD automatizados com GitHub Actions."
+        ],
+        "stack": [
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+          "React",
+          "SASS",
+          "Vite",
+          "Styled Components",
+          "CSS Modules",
+          "AWS ECR",
+          "AWS S3",
+          "AWS EC2",
+          "AWS CodeArtifact",
+          "MongoDB",
+          "Elasticsearch",
+          "Redux",
+          "Zustand",
+          "Redis",
+          "Bull",
+          "RabbitMQ",
+          "GitHub Actions",
+          "CI/CD",
+          "Docker",
+          "LLMs",
+          "Vitest",
+          "Jest",
+          "React Testing Library"
+        ]
+      },
+      {
+        "company": "Fox Corporation",
+        "role": "Engenheiro Frontend para Smart TV",
+        "from": "Jun 2025",
+        "to": "Dez 2025",
+        "achievements": [
+          "Reconstruí a aplicação frontend do zero com Remix, React Router 7 e Tailwind CSS, entregando a plataforma completa em produção em apenas 6 meses.",
+          "Otimizei a UI para rodar suavemente em hardware de baixo custo (modelos Tizen e WebOS de 2018), reduzindo o uso de memória em 50% em relação à versão anterior.",
+          "Escrevi testes unitários e de integração abrangentes com Vitest e React Testing Library para garantir a estabilidade da UI em diferentes fabricantes.",
+          "Entreguei uma base de código unificada para quatro plataformas distintas de Smart TV (Tizen, WebOS, Comcast, Vizio), eliminando forks por plataforma e reduzindo o overhead de manutenção."
+        ],
+        "stack": [
+          "JavaScript",
+          "TypeScript",
+          "Remix",
+          "React Router 7",
+          "Tailwind CSS",
+          "SASS",
+          "Firebase",
+          "Tizen",
+          "WebOS",
+          "Comcast",
+          "Vizio",
+          "CI/CD",
+          "LLMs",
+          "Vitest",
+          "Jest",
+          "Cypress",
+          "React Testing Library"
+        ]
+      },
+      {
+        "company": "World Pulse",
+        "role": "Engenheiro Full-Stack",
+        "from": "Jan 2022",
+        "to": "Jun 2025",
+        "achievements": [
+          "Construí e arquitetei a plataforma web do zero com Next.js, Node.js e GraphQL, gerenciando toda a infraestrutura na AWS (EC2, RDS, S3).",
+          "Liderei decisões técnicas, planejamento de sprints, delegação de tarefas e revisões de código em um time distribuído.",
+          "Gerenciei todo o ciclo de vida do desenvolvimento de software, desde o escopo de novas features até o deploy de hotfixes diários e releases maiores.",
+          "Projetei uma camada de API type-safe com GraphQL e tRPC, permitindo que o frontend evoluísse independentemente dos serviços de backend sem fricção de integração."
+        ],
+        "stack": [
+          "JavaScript",
+          "TypeScript",
+          "Next.js",
+          "Node.js",
+          "GraphQL",
+          "React Query",
+          "tRPC",
+          "Directus",
+          "PostgreSQL",
+          "NestJS",
+          "AWS RDS",
+          "AWS EC2",
+          "AWS S3",
+          "REST API",
+          "Firebase",
+          "CI/CD",
+          "Vite",
+          "Webpack",
+          "Redux",
+          "SASS",
+          "CSS Modules",
+          "Styled Components",
+          "E2E Testing",
+          "Jest"
+        ]
+      },
+      {
+        "company": "Globo",
+        "role": "Engenheiro Frontend para Smart TV",
+        "from": "Jan 2021",
+        "to": "Jan 2022",
+        "achievements": [
+          "Desenvolvi interfaces e funcionalidades principais do Globoplay, aplicação de streaming de alto tráfego com milhões de usuários ativos.",
+          "Construí componentes React reutilizáveis e performáticos com Canvas Web APIs, garantindo compatibilidade entre TVs Samsung, LG e Sony.",
+          "Depurei e resolvi gargalos de performance e memory leaks em fluxos de dados de alta escala em sistemas com restrições de hardware.",
+          "Implementei padrões de acessibilidade WCAG em todos os componentes de UI, garantindo conformidade da plataforma em TVs Samsung, LG e Sony."
+        ],
+        "stack": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Node.js",
+          "GraphQL",
+          "Canvas API",
+          "WebOS",
+          "Tizen",
+          "WCAG",
+          "Vitest",
+          "Jest",
+          "Cypress",
+          "React Testing Library"
+        ]
+      },
+      {
+        "company": "Freelancer",
+        "role": "Desenvolvedor Fullstack",
+        "from": "Jan 2017",
+        "to": "Jan 2021",
+        "achievements": [
+          "Desenvolvi uma ampla variedade de aplicações web ponta a ponta, gerenciando projetos do layout inicial ao deploy em nuvem e manutenção.",
+          "Construí e integrei APIs REST e GraphQL com Node.js, Express e PHP, conectando-as a bancos de dados SQL e MongoDB.",
+          "Gerenciei comunicação direta com clientes para levantar requisitos, equilibrar dívida técnica e oferecer suporte técnico de longo prazo.",
+          "Implementei funcionalidades PWA com Service Workers e cache offline, além de otimizações de SEO técnico que melhoraram o tráfego orgânico e os scores no Lighthouse."
+        ],
+        "stack": [
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+          "Express",
+          "PHP",
+          "Laravel",
+          "CodeIgniter",
+          "React",
+          "Vue",
+          "Next.js",
+          "GraphQL",
+          "SQL",
+          "MongoDB",
+          "SASS",
+          "Webpack",
+          "Gulp",
+          "Service Workers",
+          "Cloudflare",
+          "SEO"
+        ]
+      }
+    ]
+  }
 }

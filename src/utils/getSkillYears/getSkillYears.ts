@@ -22,7 +22,7 @@ const parseMonthYear = (dateStr: string) => {
 
 export const getSkillYears = (
   skill: string,
-  experiences: Messages["experiences"],
+  experiences: Messages["experience"]["experiences"],
   now = Date.now(),
 ) => {
   const oldest = experiences

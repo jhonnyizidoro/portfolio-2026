@@ -32,6 +32,7 @@ const RootLayout: FC<PropsWithChildren<Props>> = async ({
 }) => {
   const language = (await params).language as Language;
   const t = language === "en" ? en : ptBr;
+
   return (
     <html lang={language} className={proximaNova.variable}>
       <I18nProvider language={language} t={t}>
@@ -40,7 +41,7 @@ const RootLayout: FC<PropsWithChildren<Props>> = async ({
           <LanguageSwitch />
           <BodyBackground />
           <main className={styles.content}>{children}</main>
-          <Footer />
+          <Footer footer={t.footer} />
         </body>
       </I18nProvider>
     </html>

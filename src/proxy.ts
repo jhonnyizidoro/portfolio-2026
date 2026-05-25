@@ -17,9 +17,7 @@ export function proxy(request: NextRequest) {
     );
   }
 
-  const response = NextResponse.next();
-  response.headers.set("x-language", detectedLanguage);
-  return response;
+  return NextResponse.next();
 }
 
 export const config = {
