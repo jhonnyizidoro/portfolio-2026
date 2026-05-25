@@ -44,7 +44,6 @@ const LanguageSwitch: FC = () => {
         />
       </ViewTransition>
       <Link
-        scroll={false}
         className={styles.link}
         href="/pt-br"
         aria-label={languageSwitch.ptBrAriaLabel}
@@ -52,7 +51,6 @@ const LanguageSwitch: FC = () => {
         PT-BR <BrFlagIcon className={styles.icon} />
       </Link>
       <Link
-        scroll={false}
         className={styles.link}
         href="/en"
         aria-label={languageSwitch.enAriaLabel}
