@@ -70,6 +70,12 @@
     "portfolioV2AriaLabel": "Visit my 2023 portfolio"
   },
   "projects": {
+    "builtTitleBefore": "Some",
+    "builtTitleHighlight": "projects",
+    "builtTitleSuffix": "I built",
+    "openSourceTitleBefore": "",
+    "openSourceTitleHighlight": "Open source",
+    "openSourceTitleAfter": "projects",
     "builtSubtitle": "A selection of production apps I contributed to — spanning streaming platforms, Smart TV, social impact, and B2B SaaS.",
     "openSourceSubtitle": "Tools and side projects I built and shared publicly.",
     "seeMore": "See more",

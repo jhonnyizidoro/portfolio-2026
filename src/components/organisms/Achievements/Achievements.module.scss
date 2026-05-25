@@ -6,17 +6,31 @@
 .rectangle {
   position: absolute;
   filter: drop-shadow(0 0 30px rgb(0 0 0 / 15%));
-  width: 70%;
+  width: max(70%, 500px);
 }
 
 .rectangleTop {
-  top: -60px;
-  left: -60px;
+  @media (width >= 1280px) {
+    top: -60px;
+    left: -60px;
+  }
+
+  @media (width < 1280px) {
+    top: -100px;
+    left: 10px;
+  }
 }
 
 .rectangleBottom {
-  top: 150px;
-  left: -130px;
+  @media (width >= 1280px) {
+    top: 150px;
+    left: -130px;
+  }
+
+  @media (width < 1280px) {
+    top: -20px;
+    left: -80px;
+  }
 }
 
 .card {

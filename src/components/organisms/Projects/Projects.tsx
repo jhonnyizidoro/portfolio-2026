@@ -36,7 +36,11 @@ const Projects: FC<Props> = ({ projects }) => (
 
     <Blurred className={styles.card} shadow="lg">
       <h2 className={styles.title}>
-        Some <strong className={styles.titleGreen}>projects</strong> I built
+        {projects.builtTitleBefore}{" "}
+        <strong className={styles.titleGreen}>
+          {projects.builtTitleHighlight}
+        </strong>{" "}
+        {projects.builtTitleSuffix}
       </h2>
       <p className={styles.subtitle}>{projects.builtSubtitle}</p>
 
@@ -205,7 +209,13 @@ const Projects: FC<Props> = ({ projects }) => (
 
     <Blurred className={styles.card} shadow="lg">
       <h2 className={styles.title}>
-        <strong className={styles.titlePurple}>Open source</strong> projects
+        {projects.openSourceTitleBefore && (
+          <>{projects.openSourceTitleBefore} </>
+        )}
+        <strong className={styles.titlePurple}>
+          {projects.openSourceTitleHighlight}
+        </strong>
+        {projects.openSourceTitleAfter && <> {projects.openSourceTitleAfter}</>}
       </h2>
       <p className={styles.text}>{projects.openSourceSubtitle}</p>
 
