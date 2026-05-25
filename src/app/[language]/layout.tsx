@@ -75,9 +75,9 @@ const RootLayout: FC<PropsWithChildren<Props>> = async ({
 
   return (
     <html lang={language} className={proximaNova.variable}>
-      <Analytics />
       <I18nProvider language={language} t={t}>
         <body>
+          <Analytics />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
