@@ -1,6 +1,8 @@
 import { FC, PropsWithChildren } from "react";
 import type { Metadata } from "next";
 
+import { jsonLd, siteUrl } from "@/constants";
+
 import BodyBackground from "@/components/atoms/BodyBackground";
 import FloatingContact from "@/components/molecules/FloatingContact";
 import Footer from "@/components/molecules/Footer";
@@ -23,19 +25,43 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const language = (await params).language as Language;
-
-  if (language === "pt-br") {
-    return {
-      title: "Jhonny Menarim - Engenheiro Sênior Full Stack",
-      description:
-        "Portfólio de engenheiro fullstack com mais de 9 anos de experiência em React, Next.js, Node.js e IA.",
-    };
-  }
+  const t = language === "en" ? en : ptBr;
+  const { title, description, keywords } = t.seo;
+  const url = `${siteUrl}/${language}`;
 
   return {
-    title: "Jhonny Menarim - Senior Full Stack Engineer",
-    description:
-      "Portfolio of a fullstack engineer with 9+ years building production apps with React, Next.js, Node.js, and AI.",
+    metadataBase: new URL(siteUrl),
+    title,
+    description,
+    keywords,
+    authors: [{ name: "Jhonny Menarim", url: siteUrl }],
+    creator: "Jhonny Menarim",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true },
+    },
+    alternates: {
+      canonical: url,
+      languages: {
+        en: `${siteUrl}/en`,
+        "pt-BR": `${siteUrl}/pt-br`,
+      },
+    },
+    openGraph: {
+      type: "website",
+      siteName: "Jhonny Menarim",
+      title,
+      description,
+      url,
+      locale: language === "pt-br" ? "pt_BR" : "en_US",
+      alternateLocale: language === "pt-br" ? ["en_US"] : ["pt_BR"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -50,6 +76,10 @@ const RootLayout: FC<PropsWithChildren<Props>> = async ({
     <html lang={language} className={proximaNova.variable}>
       <I18nProvider language={language} t={t}>
         <body>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
           <a href="#main-content" className={styles.skipLink}>
             {t.accessibility.skipToContent}
           </a>

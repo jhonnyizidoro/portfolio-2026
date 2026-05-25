@@ -56,6 +56,7 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.foxAriaLabel}
           >
             {projects.seeMore}
+            <span className={styles.srOnly}>{projects.foxAriaLabel}</span>
             <ArrowRightIcon
               aria-hidden="true"
               width={20}
@@ -79,6 +80,7 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.globoplayAriaLabel}
           >
             {projects.seeMore}
+            <span className={styles.srOnly}>{projects.globoplayAriaLabel}</span>
             <ArrowRightIcon
               aria-hidden="true"
               width={20}
@@ -107,6 +109,9 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.worldpulseAriaLabel}
           >
             {projects.seeMore}
+            <span className={styles.srOnly}>
+              {projects.worldpulseAriaLabel}
+            </span>
             <ArrowRightIcon
               aria-hidden="true"
               width={20}
@@ -130,6 +135,9 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.radargestaoAriaLabel}
           >
             {projects.seeMore}
+            <span className={styles.srOnly}>
+              {projects.radargestaoAriaLabel}
+            </span>
             <ArrowRightIcon
               aria-hidden="true"
               width={20}
@@ -153,6 +161,9 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.sevenplaceAriaLabel}
           >
             {projects.seeMore}
+            <span className={styles.srOnly}>
+              {projects.sevenplaceAriaLabel}
+            </span>
             <ArrowRightIcon
               aria-hidden="true"
               width={20}
@@ -181,6 +192,7 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.shiftcarAriaLabel}
           >
             {projects.seeMore}
+            <span className={styles.srOnly}>{projects.shiftcarAriaLabel}</span>
             <ArrowRightIcon
               aria-hidden="true"
               width={20}
@@ -220,6 +232,9 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.strapiGenerateTypesAriaLabel}
           >
             {projects.seeMore}
+            <span className={styles.srOnly}>
+              {projects.strapiGenerateTypesAriaLabel}
+            </span>
             <ArrowRightIcon
               aria-hidden="true"
               width={20}
@@ -250,6 +265,7 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.marriageAriaLabel}
           >
             {projects.seeMore}
+            <span className={styles.srOnly}>{projects.marriageAriaLabel}</span>
             <ArrowRightIcon
               aria-hidden="true"
               width={20}

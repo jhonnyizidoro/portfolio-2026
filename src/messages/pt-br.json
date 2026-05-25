@@ -1,4 +1,26 @@
 {
+  "seo": {
+    "title": "Jhonny Menarim - Engenheiro Sênior Full Stack",
+    "description": "Portfólio de engenheiro fullstack com mais de 9 anos de experiência em React, Next.js, Node.js e IA.",
+    "keywords": [
+      "Engenheiro Full Stack",
+      "Engenheiro Frontend",
+      "React",
+      "Next.js",
+      "Node.js",
+      "TypeScript",
+      "JavaScript",
+      "IA",
+      "Engenheiro de Software",
+      "Jhonny Menarim",
+      "Portfólio",
+      "Desenvolvedor",
+      "Desenvolvedor Web"
+    ],
+    "ogTitle": "Engenheiro Sênior Full Stack",
+    "ogTagline": "React · Next.js · Node.js · TypeScript · IA",
+    "ogEyebrow": "Portfólio"
+  },
   "accessibility": {
     "skipToContent": "Pular para o conteúdo principal"
   },

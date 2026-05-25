@@ -1,4 +1,26 @@
 {
+  "seo": {
+    "title": "Jhonny Menarim - Senior Full Stack Engineer",
+    "description": "Portfolio of a fullstack engineer with 9+ years building production apps with React, Next.js, Node.js, and AI.",
+    "keywords": [
+      "Full Stack Engineer",
+      "Frontend Engineer",
+      "React",
+      "Next.js",
+      "Node.js",
+      "TypeScript",
+      "JavaScript",
+      "AI",
+      "Software Engineer",
+      "Jhonny Menarim",
+      "Portfolio",
+      "Developer",
+      "Web Developer"
+    ],
+    "ogTitle": "Senior Full Stack Engineer",
+    "ogTagline": "React · Next.js · Node.js · TypeScript · AI",
+    "ogEyebrow": "Portfolio"
+  },
   "accessibility": {
     "skipToContent": "Skip to main content"
   },
