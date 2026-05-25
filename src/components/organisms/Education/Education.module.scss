@@ -3,7 +3,6 @@
 }
 
 .title {
-  font-size: 58px;
   background-image: linear-gradient(
     to right,
     var(--color-t1),
@@ -30,13 +29,28 @@
       color-mix(var(--color-accent) 50%, var(--color-dark))
     );
   }
+
+  @media (width >= 1280px) {
+    font-size: 58px;
+  }
+
+  @media (width < 1280px) {
+    font-size: 42px;
+  }
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 40px;
   position: relative;
+
+  @media (width >= 1280px) {
+    grid-template-columns: auto auto;
+    gap: 40px;
+  }
+
+  @media (width < 1280px) {
+    gap: 20px;
+  }
 }
 
 .sphere {
@@ -59,7 +73,7 @@
 }
 
 .card {
-  padding: 40px;
+  padding: calc(var(--responsive-spacing) * 40);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -131,6 +145,14 @@
   border-radius: 99px;
   flex-grow: 1;
   text-align: center;
+}
+
+.listDivisor {
+  @media (width < 1280px) {
+    display: block;
+    height: 0;
+    opacity: 0;
+  }
 }
 
 @keyframes drift-a {

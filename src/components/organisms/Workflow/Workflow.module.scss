@@ -10,14 +10,18 @@
 .text {
   font-size: 18px;
   text-align: center;
-  margin-block: 40px 80px;
+  margin-block: calc(var(--responsive-spacing) * 40)
+    calc(var(--responsive-spacing) * 80);
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  padding-bottom: 80px;
   transition: 1.6s;
+
+  @media (width >= 1280px) {
+    grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 80px;
+  }
 }
 
 .wrapperVisible {
@@ -32,7 +36,6 @@
       content: "";
       display: block;
       position: absolute;
-      right: 0;
       background-image: repeating-linear-gradient(
         to bottom,
         color-mix(in srgb, var(--color-t2) 30%, transparent) 0,
@@ -41,30 +44,60 @@
         transparent 16px
       );
       width: 1px;
-      height: calc(100% - 100px);
-      top: 50px;
+    }
+  }
+
+  @media (width >= 1280px) {
+    &:not(:last-child) {
+      &::after {
+        right: 0;
+        height: calc(100% - 100px);
+        top: 50px;
+      }
+    }
+  }
+
+  @media (width < 1280px) {
+    padding-top: 30px;
+
+    &:not(:last-child) {
+      &::after {
+        right: 50%;
+        height: 30px;
+        bottom: 0;
+        translate: 0 100%;
+      }
     }
   }
 }
 
 .itemWrapperEven {
   transition: 1.6s;
-  padding-top: 70px;
   opacity: 1;
+
+  @media (width >= 1280px) {
+    padding-top: 70px;
+  }
 }
 
 .itemWrapperEvenVisible {
-  padding-top: 150px;
   opacity: 1;
+
+  @media (width >= 1280px) {
+    padding-top: 150px;
+  }
 }
 
 .item {
-  width: 120%;
-  margin-left: -10%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
   padding: 15px;
   border-radius: 99px;
+
+  @media (width >= 1280px) {
+    width: 120%;
+    margin-left: -10%;
+  }
 }

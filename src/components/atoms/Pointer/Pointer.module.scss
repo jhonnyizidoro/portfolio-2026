@@ -43,3 +43,39 @@
     top: -6px;
   }
 }
+
+.mobileHorizontalPointer {
+  @media (width < 1280px) {
+    height: 1px;
+    width: 70px;
+    background: linear-gradient(to right, transparent, var(--color-accent));
+    rotate: 0deg;
+
+    &::after {
+      right: 0;
+      left: unset;
+      top: -6px;
+    }
+  }
+}
+
+.mobilePointerLeft {
+  @media (width < 1280px) {
+    rotate: 180deg;
+  }
+}
+
+.mobileVerticalPointer {
+  @media (width < 1280px) {
+    width: 1px;
+    height: 70px;
+    background: linear-gradient(to top, transparent, var(--color-accent));
+    rotate: 0deg;
+
+    &::after {
+      left: -5px;
+      right: unset;
+      top: -6px;
+    }
+  }
+}

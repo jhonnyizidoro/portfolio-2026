@@ -98,7 +98,7 @@ const Introduction: FC = async () => {
         </div>
 
         <div className={cn(styles.pill, styles.rightPill)}>
-          <Pointer direction="left" responsive />
+          <Pointer direction="left" responsive mobileDirection="right" />
           <Blurred className={styles.pillContent} shadow="md">
             <ChipIcon width={20} className={styles.pillIcon} /> {intro.aiPill}
           </Blurred>

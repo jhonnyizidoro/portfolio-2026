@@ -72,8 +72,11 @@
 
 .chartWrapper {
   display: grid;
-  grid-template-columns: 40% auto;
   gap: calc(var(--responsive-spacing) * 80);
+
+  @media (width >= 1280px) {
+    grid-template-columns: 40% auto;
+  }
 }
 
 .leftTet {
@@ -83,14 +86,21 @@
 }
 
 .right {
-  padding: 40px;
+  padding: calc(var(--responsive-spacing) * 40);
   border-radius: 10px;
 }
 
 .rightWrapper {
   display: flex;
-  justify-content: space-evenly;
   margin-block: 50px;
+
+  @media (width >= 1280px) {
+    justify-content: space-evenly;
+  }
+
+  @media (width < 1280px) {
+    justify-content: space-between;
+  }
 }
 
 .rightText {

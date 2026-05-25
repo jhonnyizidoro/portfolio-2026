@@ -48,14 +48,16 @@ const LanguageSwitch: FC = () => {
         href="/pt-br"
         aria-label={languageSwitch.ptBrAriaLabel}
       >
-        PT-BR <BrFlagIcon className={styles.icon} />
+        <span className={styles.label}>PT-BR</span>
+        <BrFlagIcon />
       </Link>
       <Link
         className={styles.link}
         href="/en"
         aria-label={languageSwitch.enAriaLabel}
       >
-        EN <UsFlagIcon className={styles.icon} />
+        <span className={styles.label}>EN</span>
+        <UsFlagIcon />
       </Link>
     </Blurred>
   );

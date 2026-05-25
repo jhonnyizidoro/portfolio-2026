@@ -1,9 +1,12 @@
 .container {
   display: grid;
-  grid-template-columns: 70% auto;
-  gap: 40px;
+  gap: calc(var(--responsive-spacing) * 40);
   position: relative;
   margin-block: var(--section-spacing);
+
+  @media (width >= 1280px) {
+    grid-template-columns: 70% auto;
+  }
 }
 
 .card {
@@ -32,8 +35,11 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: calc(var(--responsive-spacing) * 40);
+
+  @media (width >= 1280px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .itemCard {

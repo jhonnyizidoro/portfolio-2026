@@ -1,9 +1,12 @@
 .container {
   display: grid;
-  grid-template-columns: 70% auto;
   gap: calc(var(--responsive-spacing) * 40);
   position: relative;
   margin-block: var(--section-spacing);
+
+  @media (width >= 1280px) {
+    grid-template-columns: 70% auto;
+  }
 }
 
 .card {
@@ -41,7 +44,7 @@
 .list {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: calc(var(--responsive-spacing) * 15);
 }
 
 .skill {

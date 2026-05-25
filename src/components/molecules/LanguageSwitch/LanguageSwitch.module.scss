@@ -1,12 +1,21 @@
 .wrapper {
   position: absolute;
-  right: calc(var(--responsive-spacing) * 30);
-  top: calc(var(--responsive-spacing) * 30);
   z-index: 1;
-  padding-inline: 13px;
   border-radius: 99px;
   display: flex;
-  gap: 20px;
+
+  @media (width >= 1280px) {
+    gap: 20px;
+    padding-inline: 13px;
+    right: calc(var(--responsive-spacing) * 30);
+    top: calc(var(--responsive-spacing) * 30);
+  }
+
+  @media (width < 1280px) {
+    padding-inline: 7px;
+    right: 7px;
+    top: 7px;
+  }
 }
 
 .wrapperScrolled {
@@ -15,20 +24,42 @@
 }
 
 .blurred {
-  height: 32px;
   position: absolute;
-  top: 7px;
   border-radius: 99px;
+
+  @media (width >= 1280px) {
+    top: 7px;
+    height: 32px;
+  }
+
+  @media (width < 1280px) {
+    top: 5px;
+    height: 36px;
+  }
 }
 
 .blurredLeft {
-  width: 100px;
   left: 7px;
+
+  @media (width >= 1280px) {
+    width: 100px;
+  }
+
+  @media (width < 1280px) {
+    width: 41px;
+  }
 }
 
 .blurredRight {
-  width: 85px;
   right: 7px;
+
+  @media (width >= 1280px) {
+    width: 85px;
+  }
+
+  @media (width < 1280px) {
+    width: 41px;
+  }
 }
 
 .link {
@@ -39,7 +70,20 @@
   position: relative;
   z-index: 1;
   align-items: center;
-  padding: 13px;
+
+  @media (width >= 1280px) {
+    padding: 13px;
+  }
+
+  @media (width < 1280px) {
+    padding: 18px 13px;
+  }
+}
+
+.label {
+  @media (width < 1280px) {
+    display: none;
+  }
 }
 
 @keyframes show-header {

@@ -20,7 +20,7 @@ const Experience: FC = async () => {
     <div className={styles.containerWrapper} id={sectionIds.experience}>
       <SphereIcon className={styles.sphere} />
       <Container className={styles.container}>
-        <h2 className={styles.title}>Experience</h2>
+        <h2 className={styles.title}>{t.experienceTitle}</h2>
         <div className={styles.wrapper}>
           {t.experiences.map((xp, i) => (
             <Blurred

@@ -7,6 +7,16 @@
   border-radius: 99px;
   display: flex;
   gap: 7px;
+
+  @media (width >= 1280px) {
+    left: calc(var(--responsive-spacing) * 30);
+    top: calc(var(--responsive-spacing) * 30);
+  }
+
+  @media (width < 1280px) {
+    left: 7px;
+    top: 7px;
+  }
 }
 
 .wrapperScrolled {

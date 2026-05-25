@@ -5,10 +5,18 @@
 .sphere {
   position: absolute;
   filter: drop-shadow(0 0 40px rgb(0 0 0 / 10%));
-  right: -100px;
-  top: 140px;
   width: 550px;
   animation: drift 7s ease-in-out infinite;
+
+  @media (width >= 1280px) {
+    top: 140px;
+    right: -100px;
+  }
+
+  @media (width < 1280px) {
+    top: 100px;
+    right: -200px;
+  }
 }
 
 .container {
@@ -20,14 +28,11 @@
   color: var(--color-t2);
   font-size: 24px;
   font-weight: var(--weight-semibold);
-  margin-bottom: 100px;
+  margin-bottom: calc(var(--responsive-spacing) * 100);
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: calc(var(--responsive-spacing) * 170)
-    calc(var(--responsive-spacing) * 140);
   position: relative;
   align-items: start;
 
@@ -36,8 +41,6 @@
     content: "";
     display: block;
     position: absolute;
-    left: 50%;
-    translate: -50%;
     bottom: 50px;
   }
 
@@ -59,6 +62,32 @@
     background: var(--color-accent);
     border-radius: 50%;
   }
+
+  @media (width >= 1280px) {
+    grid-template-columns: 1fr 1fr;
+    gap: calc(var(--responsive-spacing) * 170)
+      calc(var(--responsive-spacing) * 140);
+
+    &::after,
+    &::before {
+      left: 50%;
+      translate: -50%;
+    }
+  }
+
+  @media (width < 1280px) {
+    gap: 40px;
+    padding-right: 16px;
+
+    &::after,
+    &::before {
+      right: 0;
+    }
+
+    &::before {
+      translate: 50%;
+    }
+  }
 }
 
 .card {
@@ -77,7 +106,6 @@
   // Horizontal line
   &::after {
     height: 2px;
-    width: calc(var(--responsive-spacing) * 70);
   }
 
   // Arrowhead at end of horizontal line
@@ -87,6 +115,18 @@
     height: 0;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
+  }
+
+  @media (width >= 1280px) {
+    &::after {
+      width: calc(var(--responsive-spacing) * 70);
+    }
+  }
+
+  @media (width < 1280px) {
+    &::after {
+      width: 15px;
+    }
   }
 }
 
@@ -98,31 +138,68 @@
   }
 
   &::before {
-    right: calc(var(--responsive-spacing) * 70 * -1);
     border-right: 5px solid var(--color-accent);
+  }
+
+  @media (width >= 1280px) {
+    &::before {
+      right: calc(var(--responsive-spacing) * 70 * -1);
+    }
+  }
+
+  @media (width < 1280px) {
+    &::before {
+      right: -16px;
+    }
   }
 }
 
 .cardRight {
-  translate: 0 200px;
+  @media (width >= 1280px) {
+    translate: 0 200px;
 
-  &::after {
-    left: 0;
-    translate: -100%;
-    background: linear-gradient(to right, var(--color-accent), transparent);
+    &::before {
+      left: calc(var(--responsive-spacing) * 70 * -1);
+      border-left: 5px solid var(--color-accent);
+    }
+
+    &::after {
+      left: 0;
+      translate: -100%;
+      background: linear-gradient(to right, var(--color-accent), transparent);
+    }
   }
 
-  &::before {
-    left: calc(var(--responsive-spacing) * 70 * -1);
-    border-left: 5px solid var(--color-accent);
+  @media (width < 1280px) {
+    &::before {
+      right: -16px;
+      border-right: 5px solid var(--color-accent);
+    }
+
+    &::after {
+      right: 0;
+      translate: 100%;
+    }
+
+    &::after {
+      background: linear-gradient(to right, transparent, var(--color-accent));
+    }
   }
 }
 
 .header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 10px;
+
+  @media (width >= 1280px) {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (width < 1280px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 }
 
 .role {
@@ -138,10 +215,18 @@
 }
 
 .date {
-  font-size: 14px;
-  padding: 5px calc(var(--responsive-spacing) * 15);
   border-radius: 99px;
   white-space: nowrap;
+
+  @media (width >= 1280px) {
+    font-size: 14px;
+    padding: 5px calc(var(--responsive-spacing) * 15);
+  }
+
+  @media (width < 1280px) {
+    font-size: 13px;
+    padding: 2px 15px;
+  }
 }
 
 .achievement {
@@ -157,7 +242,14 @@
   display: inline-flex;
   flex-wrap: wrap;
   gap: 5px;
-  font-size: 15px;
+
+  @media (width >= 1280px) {
+    font-size: 15px;
+  }
+
+  @media (width < 1280px) {
+    font-size: 13px;
+  }
 }
 
 .stackTitle {

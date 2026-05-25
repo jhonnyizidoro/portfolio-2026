@@ -1,10 +1,17 @@
 .container {
   display: grid;
-  grid-template-columns: auto minmax(280px, 820px);
   gap: calc(var(--responsive-spacing) * 140);
-  height: max(100vh, 650px);
+  min-height: max(100vh, 650px);
   align-items: center;
   position: relative;
+
+  @media (width >= 1280px) {
+    grid-template-columns: auto minmax(280px, 820px);
+  }
+
+  @media (width < 1280px) {
+    padding-top: 100px;
+  }
 }
 
 .left {
@@ -22,9 +29,16 @@
 }
 
 .title {
-  font-size: max(calc(var(--responsive-spacing) * 64), 48px);
   font-weight: var(--weight-extrabold);
   margin-block: 30px 15px;
+
+  @media (width >= 1280px) {
+    font-size: max(calc(var(--responsive-spacing) * 64), 48px);
+  }
+
+  @media (width < 1280px) {
+    font-size: 38px;
+  }
 }
 
 .myName {
@@ -33,22 +47,37 @@
 }
 
 .text {
-  font-size: 20px;
   line-height: 1.7;
   margin-bottom: calc(var(--responsive-spacing) * 50);
+
+  @media (width >= 1280px) {
+    font-size: 20px;
+  }
+
+  @media (width < 1280px) {
+    font-size: 18px;
+  }
 }
 
 .button {
-  padding: 16px 22px;
   display: inline-flex;
   align-items: center;
-  gap: 20px;
   font-weight: var(--weight-semibold);
   border-radius: 10px;
   transition: 0.25s;
 
   &:hover {
     translate: 0 -2px;
+  }
+
+  @media (width >= 1280px) {
+    gap: 20px;
+    padding: 16px 22px;
+  }
+
+  @media (width < 1280px) {
+    gap: 7px;
+    padding: 13px 12px;
   }
 }
 
@@ -70,7 +99,19 @@
 
 .right {
   position: relative;
-  text-align: center;
+
+  @media (width >= 1280px) {
+    text-align: center;
+  }
+
+  @media (width < 1280px) {
+    text-align: right;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
 }
 
 .pill {
@@ -79,21 +120,45 @@
   display: flex;
   align-items: center;
   z-index: 1;
+
+  @media (width < 1280px) {
+    left: 0;
+  }
 }
 
 .leftPill {
-  bottom: calc(var(--responsive-spacing) * 30);
-  right: calc(50% + calc(var(--responsive-spacing) * 70));
+  @media (width >= 1280px) {
+    right: calc(50% + calc(var(--responsive-spacing) * 70));
+    bottom: calc(var(--responsive-spacing) * 30);
+  }
+
+  @media (width < 1280px) {
+    top: 0;
+  }
 }
 
 .centerPill {
-  bottom: calc(var(--responsive-spacing) * 170);
-  right: 50%;
+  @media (width >= 1280px) {
+    right: 50%;
+    bottom: calc(var(--responsive-spacing) * 170);
+  }
+
+  @media (width < 1280px) {
+    top: 50%;
+    translate: 0 -50%;
+  }
 }
 
 .rightPill {
-  bottom: calc(var(--responsive-spacing) * 80);
-  left: calc(50% + calc(var(--responsive-spacing) * 60));
+  @media (width >= 1280px) {
+    left: calc(50% + calc(var(--responsive-spacing) * 60));
+    bottom: calc(var(--responsive-spacing) * 80);
+  }
+
+  @media (width < 1280px) {
+    flex-direction: row-reverse;
+    bottom: 0;
+  }
 }
 
 .pillContent {
@@ -115,9 +180,17 @@
 }
 
 .imageCommon {
-  width: calc(var(--responsive-spacing) * 210);
-  height: calc(var(--responsive-spacing) * 210);
   border-radius: 50%;
+
+  @media (width >= 1280px) {
+    width: calc(var(--responsive-spacing) * 210);
+    height: calc(var(--responsive-spacing) * 210);
+  }
+
+  @media (width < 1280px) {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .image {
@@ -138,11 +211,25 @@
 }
 
 .patternBottom {
-  top: 50%;
-  right: 50%;
+  @media (width >= 1280px) {
+    top: 50%;
+    right: 50%;
+  }
+
+  @media (width < 1280px) {
+    right: 45px;
+    bottom: -45px;
+  }
 }
 
 .patternTop {
-  bottom: 50%;
-  left: 50%;
+  @media (width >= 1280px) {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  @media (width < 1280px) {
+    right: -45px;
+    top: -45px;
+  }
 }

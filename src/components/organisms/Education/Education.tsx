@@ -68,12 +68,14 @@ const Education: FC = () => {
 
           <div className={styles.list}>
             <Blurred className={styles.listItem} bordered>
-              <BrFlagIcon width={20} /> {education.portuguese} -{" "}
+              <BrFlagIcon width={20} /> {education.portuguese}{" "}
+              <span className={styles.listDivisor}> - </span>
               <strong>{education.portugueseLevel}</strong>
             </Blurred>
 
             <Blurred className={styles.listItem} bordered>
-              <UsFlagIcon width={20} /> {education.english} -{" "}
+              <UsFlagIcon width={20} /> {education.english}{" "}
+              <span className={styles.listDivisor}> - </span>
               <strong>{education.englishLevel}</strong>
             </Blurred>
           </div>
