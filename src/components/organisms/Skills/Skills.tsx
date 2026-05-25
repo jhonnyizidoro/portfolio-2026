@@ -42,7 +42,7 @@ const Skills: FC<Props> = ({ experience, skills }) => (
           <Blurred className={styles.skill} key={s} as="li" bordered>
             {s}
             <span className={styles.time}>
-              <Suspense fallback="0yr">
+              <Suspense fallback="10yr">
                 <SkillYears skill={s} experiences={experience.experiences} />
               </Suspense>
             </span>
@@ -62,7 +62,7 @@ const Skills: FC<Props> = ({ experience, skills }) => (
           <Blurred className={styles.skill} key={s} as="li" bordered>
             {s}
             <span className={styles.time}>
-              <Suspense fallback="0yr">
+              <Suspense fallback="10yr">
                 <SkillYears skill={s} experiences={experience.experiences} />
               </Suspense>
             </span>
@@ -83,7 +83,7 @@ const Skills: FC<Props> = ({ experience, skills }) => (
           <Blurred className={styles.skill} key={s} as="li" bordered>
             {s}
             <span className={styles.time}>
-              <Suspense fallback="0yr">
+              <Suspense fallback="10yr">
                 <SkillYears skill={s} experiences={experience.experiences} />
               </Suspense>
             </span>
