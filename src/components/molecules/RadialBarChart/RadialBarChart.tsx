@@ -1,6 +1,6 @@
 "use client";
 
-import { type FC, useRef } from "react";
+import { type FC, useId, useRef } from "react";
 
 import { useOnScreen } from "@/hooks/use-on-screen";
 
@@ -23,6 +23,8 @@ const center = SIZE / 2;
 
 const RadialBarChart: FC<Props> = ({ percentage, color, label }) => {
   const offset = circumference - (percentage / 100) * circumference;
+  const id = useId();
+  const filterId = `glow-${id}`;
   const ref = useRef<HTMLDivElement>(null);
   const onScreen = useOnScreen(ref);
 
@@ -33,6 +35,17 @@ const RadialBarChart: FC<Props> = ({ percentage, color, label }) => {
       ref={ref}
     >
       <svg width={SIZE} height={SIZE} className={styles.svg}>
+        <defs>
+          <filter id={filterId} x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="2" result="blur1" />
+            <feGaussianBlur stdDeviation="6" result="blur2" />
+            <feMerge>
+              <feMergeNode in="blur2" />
+              <feMergeNode in="blur1" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
         <circle
           cx={center}
           cy={center}
@@ -49,6 +62,7 @@ const RadialBarChart: FC<Props> = ({ percentage, color, label }) => {
           strokeWidth={STROKE}
           strokeDasharray={circumference}
           strokeDashoffset={onScreen ? offset : circumference}
+          filter={`url(#${filterId})`}
           className={cn(
             color === "red" && styles.progressRed,
             color === "green" && styles.progressGreen,
