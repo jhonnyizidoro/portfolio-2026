@@ -8,7 +8,7 @@ export const useOnScreen = (ref: RefObject<Element | null>) => {
     if (!element) return;
 
     const observer = new IntersectionObserver(([entry]) => {
-      setIsOnScreen(entry.isIntersecting);
+      setIsOnScreen(!!entry?.isIntersecting);
     });
 
     observer.observe(element);
