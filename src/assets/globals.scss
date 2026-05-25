@@ -19,6 +19,8 @@
 html {
   height: 100%;
   color-scheme: dark;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent) transparent;
 }
 
 html,

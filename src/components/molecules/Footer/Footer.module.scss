@@ -30,6 +30,12 @@
   color: var(--color-accent);
 }
 
+.portfolioLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 @keyframes drift {
   0%,
   100% {

@@ -69,6 +69,11 @@
   border-radius: 7px;
   font-size: 15px;
   font-weight: var(--weight-semibold);
+  transition: 0.25s;
+
+  &:hover {
+    translate: 0 -2px;
+  }
 }
 
 .linkIcon {

@@ -3,10 +3,10 @@
   right: calc(var(--responsive-spacing) * 30);
   top: calc(var(--responsive-spacing) * 30);
   z-index: 1;
-  padding: 13px 26px;
+  padding-inline: 13px;
   border-radius: 99px;
   display: flex;
-  gap: 41px;
+  gap: 20px;
 }
 
 .wrapperScrolled {
@@ -39,6 +39,7 @@
   position: relative;
   z-index: 1;
   align-items: center;
+  padding: 13px;
 }
 
 @keyframes show-header {

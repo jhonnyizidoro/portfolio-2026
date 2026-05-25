@@ -1,9 +1,13 @@
-import type { FC } from "react";
+"use client";
+
+import { type FC, useRef } from "react";
 
 import { sectionIds } from "@/constants";
 
 import Blurred from "@/components/atoms/Blurred";
 import Container from "@/components/atoms/Container";
+
+import { useOnScreen } from "@/hooks/use-on-screen";
 
 import { cn } from "@/utils/cn";
 
@@ -14,21 +18,26 @@ import {
   UniversityIcon,
   UsFlagIcon,
 } from "@/assets/svg";
-import { getTranslations } from "@/server/i18n";
+import { useTranslations } from "@/store/i18n";
 
 import styles from "./Education.module.scss";
 
-const Education: FC = async () => {
-  const { education } = await getTranslations();
+const Education: FC = () => {
+  const { education } = useTranslations();
+  const ref = useRef<HTMLDivElement>(null);
+  const onScreen = useOnScreen(ref);
 
   return (
     <Container size="sm" id={sectionIds.education} className={styles.container}>
       <h2 className={styles.title}>{education.title}</h2>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} ref={ref}>
         <SphereIcon className={cn(styles.sphere, styles.sphereTop)} />
         <SphereIcon className={cn(styles.sphere, styles.sphereBottom)} />
 
-        <Blurred shadow="lg" className={styles.card}>
+        <Blurred
+          shadow="lg"
+          className={cn(styles.card, onScreen && styles.cardVisible)}
+        >
           <h3 className={styles.header}>
             <span className={styles.iconWrapper}>
               <UniversityIcon className={styles.icon} width={24} />
@@ -46,7 +55,10 @@ const Education: FC = async () => {
           </strong>
         </Blurred>
 
-        <Blurred shadow="lg" className={styles.card}>
+        <Blurred
+          shadow="lg"
+          className={cn(styles.card, onScreen && styles.cardVisible)}
+        >
           <h3 className={styles.header}>
             <span className={styles.iconWrapper}>
               <TranslationIcon className={styles.icon} width={24} />

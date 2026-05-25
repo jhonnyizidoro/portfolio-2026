@@ -57,6 +57,7 @@ const Introduction: FC = async () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"
+          hoverable
         >
           {intro.contactButton}
         </Blurred>

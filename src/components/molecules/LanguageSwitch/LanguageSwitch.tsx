@@ -13,12 +13,14 @@ import { useIsScrolled } from "@/hooks/use-is-scrolled";
 import { cn } from "@/utils/cn";
 
 import { BrFlagIcon, UsFlagIcon } from "@/assets/svg";
-import { useI18n } from "@/store/i18n";
+import { useLanguage, useTranslations } from "@/store/i18n";
 
 import styles from "./LanguageSwitch.module.scss";
 
 const LanguageSwitch: FC = () => {
-  const { language, t } = useI18n();
+  const { languageSwitch } = useTranslations();
+  const language = useLanguage();
+
   const scrolled = useIsScrolled({
     offset: 200,
     resetOnZeroOnly: true,
@@ -45,7 +47,7 @@ const LanguageSwitch: FC = () => {
         scroll={false}
         className={styles.link}
         href="/pt-br"
-        aria-label={t.languageSwitch.ptBrAriaLabel}
+        aria-label={languageSwitch.ptBrAriaLabel}
       >
         PT-BR <BrFlagIcon className={styles.icon} />
       </Link>
@@ -53,7 +55,7 @@ const LanguageSwitch: FC = () => {
         scroll={false}
         className={styles.link}
         href="/en"
-        aria-label={t.languageSwitch.enAriaLabel}
+        aria-label={languageSwitch.enAriaLabel}
       >
         EN <UsFlagIcon className={styles.icon} />
       </Link>

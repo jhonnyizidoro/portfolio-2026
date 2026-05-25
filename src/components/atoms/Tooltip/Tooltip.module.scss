@@ -1,0 +1,30 @@
+.wrapper {
+  position: relative;
+
+  &:hover {
+    .tooltip {
+      opacity: 1;
+      top: 50%;
+    }
+  }
+}
+
+.tooltip {
+  position: absolute;
+  font-size: 13px;
+  background: var(--color-dark);
+  z-index: 1;
+  padding: 3px 7px;
+  border-radius: 99px;
+  left: 110%;
+  opacity: 0;
+  pointer-events: none;
+  font-weight: var(--weight-semibold);
+  top: 0;
+  translate: 0 -50%;
+  transition: 0.25s;
+  color: var(--color-accent);
+  white-space: nowrap;
+  display: block;
+  box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+}

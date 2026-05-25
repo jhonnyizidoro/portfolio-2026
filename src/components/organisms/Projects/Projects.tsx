@@ -45,6 +45,7 @@ const Projects: FC = async () => {
             <p className={styles.text}>{projects.foxText}</p>
             <Blurred
               as={Link}
+              hoverable
               bordered
               href="https://www.foxlocal.com/"
               className={styles.link}
@@ -63,6 +64,7 @@ const Projects: FC = async () => {
             <p className={styles.text}>{projects.globoplayText}</p>
             <Blurred
               as={Link}
+              hoverable
               bordered
               href="https://globoplay.globo.com/"
               className={styles.link}
@@ -86,6 +88,7 @@ const Projects: FC = async () => {
             <p className={styles.text}>{projects.worldpulseText}</p>
             <Blurred
               as={Link}
+              hoverable
               bordered
               href="https://www.worldpulse.org/"
               className={styles.link}
@@ -104,6 +107,7 @@ const Projects: FC = async () => {
             <p className={styles.text}>{projects.radargestaoText}</p>
             <Blurred
               as={Link}
+              hoverable
               bordered
               href="https://radardagestao.com.br/"
               className={styles.link}
@@ -122,6 +126,7 @@ const Projects: FC = async () => {
             <p className={styles.text}>{projects.sevenplaceText}</p>
             <Blurred
               as={Link}
+              hoverable
               bordered
               href="https://www.7place.com.br/"
               className={styles.link}
@@ -145,6 +150,7 @@ const Projects: FC = async () => {
             <p className={styles.text}>{projects.shiftcarText}</p>
             <Blurred
               as={Link}
+              hoverable
               bordered
               href="https://www.shiftcar.com.br/"
               className={styles.link}
@@ -175,6 +181,7 @@ const Projects: FC = async () => {
             <p className={styles.text}>{projects.strapiGenerateTypesText}</p>
             <Blurred
               as={Link}
+              hoverable
               bordered
               href="https://github.com/jhonnyizidoro/strapi-generate-types"
               className={styles.link}
@@ -196,6 +203,7 @@ const Projects: FC = async () => {
             <p className={styles.text}>{projects.marriageText}</p>
             <Blurred
               as={Link}
+              hoverable
               bordered
               href="https://github.com/jhonnyizidoro/marriage"
               className={styles.link}

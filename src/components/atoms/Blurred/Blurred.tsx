@@ -12,6 +12,7 @@ type BlurredOwnProps = {
   className?: string;
   bordered?: boolean;
   shadow?: "sm" | "md" | "lg";
+  hoverable?: boolean;
 };
 
 type Props<T extends ElementType> = BlurredOwnProps &
@@ -25,6 +26,7 @@ const Blurred = <T extends ElementType = "div">({
   className,
   bordered,
   shadow,
+  hoverable,
   ...rest
 }: PropsWithChildren<Props<T>>) => {
   const Tag = (as ?? "div") as ElementType;
@@ -35,6 +37,7 @@ const Blurred = <T extends ElementType = "div">({
         className,
         styles.blurred,
         bordered && styles.bordered,
+        hoverable && styles.hoverable,
         shadow === "sm" && styles.shadowSm,
         shadow === "md" && styles.shadowMd,
         shadow === "lg" && styles.shadowLg,

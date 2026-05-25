@@ -21,7 +21,12 @@
     "phoneAriaLabel": "Me ligue",
     "emailAriaLabel": "Me envie um e-mail",
     "linkedinAriaLabel": "Visite meu perfil no LinkedIn",
-    "githubAriaLabel": "Visite meu perfil no GitHub"
+    "githubAriaLabel": "Visite meu perfil no GitHub",
+    "whatsappTooltip": "WhatsApp",
+    "phoneTooltip": "Me ligue",
+    "emailTooltip": "Enviar e-mail",
+    "linkedinTooltip": "LinkedIn",
+    "githubTooltip": "GitHub"
   },
   "footer": {
     "title": "Entre em contato",
@@ -30,13 +35,17 @@
     "linkedinAriaLabel": "Visite meu perfil no LinkedIn",
     "resumeAriaLabel": "Baixar meu currículo",
     "resumeDownload": "Baixar",
-    "resumeSuffix": "meu currículo"
+    "resumeSuffix": "meu currículo",
+    "portfolioV1": "Portfolio 2019",
+    "portfolioV1AriaLabel": "Visitar meu portfólio de 2019",
+    "portfolioV2": "Portfolio 2023",
+    "portfolioV2AriaLabel": "Visitar meu portfólio de 2023"
   },
   "projects": {
     "builtSubtitle": "Uma seleção de aplicações em produção nas quais contribuí — plataformas de streaming, Smart TV, impacto social e SaaS B2B.",
     "openSourceSubtitle": "Ferramentas e projetos pessoais que construí e compartilhei publicamente.",
     "seeMore": "Ver mais",
-    "foxText": "Aplicativo de streaming para Smart TV com notícias locais 24/7 das emissoras FOX nos EUA para Tizen, WebOS, Comcast e Vizio.",
+    "foxText": "Aplicativo de streaming para Smart TV com notícias locais 24/7 das emissoras FOX nos EUA para Smart Tvs Tizen, WebOS, Comcast e Vizio.",
     "globoplayText": "Maior plataforma de streaming do Brasil, entregando TV ao vivo, séries, filmes e conteúdo esportivo a milhões de assinantes em todo o país.",
     "worldpulseText": "Rede de impacto social que conecta mulheres e aliados em 233+ países para compartilhar histórias e colaborar em mudanças sociais.",
     "radargestaoText": "Plataforma de gestão jurídica com consultoria, recrutamento e cursos de desenvolvimento profissional para escritórios de advocacia.",
@@ -131,7 +140,9 @@
       "PHP",
       "Laravel",
       "CodeIgniter",
-      "Directus"
+      "Directus",
+      "PostgreSQL",
+      "NestJS"
     ],
     "misc": [
       "Docker",
@@ -237,6 +248,8 @@
         "React Query",
         "tRPC",
         "Directus",
+        "PostgreSQL",
+        "NestJS",
         "AWS RDS",
         "AWS EC2",
         "AWS S3",

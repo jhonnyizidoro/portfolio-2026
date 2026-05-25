@@ -26,3 +26,13 @@ export const I18nProvider: FC<Props> = ({ children, language, t }) => {
 export const useI18n = () => {
   return useContext(I18nContext);
 };
+
+export const useTranslations = () => {
+  const { t } = useContext(I18nContext);
+  return t;
+};
+
+export const useLanguage = () => {
+  const { language } = useContext(I18nContext);
+  return language;
+};

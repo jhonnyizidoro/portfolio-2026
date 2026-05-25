@@ -21,7 +21,12 @@
     "phoneAriaLabel": "Call me",
     "emailAriaLabel": "Send me an email",
     "linkedinAriaLabel": "Visit my LinkedIn profile",
-    "githubAriaLabel": "Visit my GitHub profile"
+    "githubAriaLabel": "Visit my GitHub profile",
+    "whatsappTooltip": "WhatsApp",
+    "phoneTooltip": "Call me",
+    "emailTooltip": "Send an email",
+    "linkedinTooltip": "LinkedIn",
+    "githubTooltip": "GitHub"
   },
   "footer": {
     "title": "Get in touch",
@@ -30,7 +35,11 @@
     "linkedinAriaLabel": "Visit my LinkedIn profile",
     "resumeAriaLabel": "Download my resume",
     "resumeDownload": "Download",
-    "resumeSuffix": "my resume"
+    "resumeSuffix": "my resume",
+    "portfolioV1": "Portfolio 2019",
+    "portfolioV1AriaLabel": "Visit my 2019 portfolio",
+    "portfolioV2": "Portfolio 2023",
+    "portfolioV2AriaLabel": "Visit my 2023 portfolio"
   },
   "projects": {
     "builtSubtitle": "A selection of production apps I contributed to — spanning streaming platforms, Smart TV, social impact, and B2B SaaS.",
@@ -131,7 +140,9 @@
       "PHP",
       "Laravel",
       "CodeIgniter",
-      "Directus"
+      "Directus",
+      "PostgreSQL",
+      "NestJS"
     ],
     "misc": [
       "Docker",
@@ -237,6 +248,8 @@
         "React Query",
         "tRPC",
         "Directus",
+        "PostgreSQL",
+        "NestJS",
         "AWS RDS",
         "AWS EC2",
         "AWS S3",

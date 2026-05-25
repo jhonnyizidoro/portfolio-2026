@@ -16,6 +16,12 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  padding-bottom: 80px;
+  transition: 1.6s;
+}
+
+.wrapperVisible {
+  padding-bottom: 0;
 }
 
 .itemWrapper {
@@ -42,7 +48,14 @@
 }
 
 .itemWrapperEven {
+  transition: 1.6s;
+  padding-top: 70px;
+  opacity: 1;
+}
+
+.itemWrapperEvenVisible {
   padding-top: 150px;
+  opacity: 1;
 }
 
 .item {

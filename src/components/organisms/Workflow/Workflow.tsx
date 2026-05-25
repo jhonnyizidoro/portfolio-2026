@@ -1,8 +1,12 @@
-import type { FC } from "react";
+"use client";
+
+import { type FC, useRef } from "react";
 
 import Blurred from "@/components/atoms/Blurred";
 import Container from "@/components/atoms/Container";
 import Dot from "@/components/atoms/Dot";
+
+import { useOnScreen } from "@/hooks/use-on-screen";
 
 import { cn } from "@/utils/cn";
 
@@ -13,12 +17,14 @@ import {
   LightningIcon,
   TestIcon,
 } from "@/assets/svg";
-import { getTranslations } from "@/server/i18n";
+import { useTranslations } from "@/store/i18n";
 
 import styles from "./Workflow.module.scss";
 
-const Workflow: FC = async () => {
-  const { workflow } = await getTranslations();
+const Workflow: FC = () => {
+  const { workflow } = useTranslations();
+  const ref = useRef<HTMLDivElement>(null);
+  const onScreen = useOnScreen(ref);
 
   return (
     <Container size="md" className={styles.container}>
@@ -26,14 +32,23 @@ const Workflow: FC = async () => {
       <p className={styles.text}>
         <Dot /> {workflow.text}
       </p>
-      <div className={styles.wrapper}>
+      <div
+        className={cn(styles.wrapper, onScreen && styles.wrapperVisible)}
+        ref={ref}
+      >
         <div className={styles.itemWrapper}>
           <Blurred className={styles.item} shadow="lg">
             <LampIcon height={20} width={20} />
             {workflow.brainstorm}
           </Blurred>
         </div>
-        <div className={cn(styles.itemWrapper, styles.itemWrapperEven)}>
+        <div
+          className={cn(
+            styles.itemWrapper,
+            styles.itemWrapperEven,
+            onScreen && styles.itemWrapperEvenVisible,
+          )}
+        >
           <Blurred className={styles.item} shadow="lg">
             <CodeIcon height={20} width={20} />
             {workflow.aiPairing}
@@ -45,7 +60,13 @@ const Workflow: FC = async () => {
             {workflow.codeReview}
           </Blurred>
         </div>
-        <div className={cn(styles.itemWrapper, styles.itemWrapperEven)}>
+        <div
+          className={cn(
+            styles.itemWrapper,
+            styles.itemWrapperEven,
+            onScreen && styles.itemWrapperEvenVisible,
+          )}
+        >
           <Blurred className={styles.item} shadow="lg">
             <TestIcon height={20} width={20} />
             {workflow.tests}
