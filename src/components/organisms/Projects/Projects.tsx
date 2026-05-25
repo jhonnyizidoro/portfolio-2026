@@ -56,7 +56,11 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.foxAriaLabel}
           >
             {projects.seeMore}
-            <ArrowRightIcon width={20} className={styles.linkIcon} />
+            <ArrowRightIcon
+              aria-hidden="true"
+              width={20}
+              className={styles.linkIcon}
+            />
           </Blurred>
         </Blurred>
 
@@ -75,7 +79,11 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.globoplayAriaLabel}
           >
             {projects.seeMore}
-            <ArrowRightIcon width={20} className={styles.linkIcon} />
+            <ArrowRightIcon
+              aria-hidden="true"
+              width={20}
+              className={styles.linkIcon}
+            />
           </Blurred>
         </Blurred>
 
@@ -99,7 +107,11 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.worldpulseAriaLabel}
           >
             {projects.seeMore}
-            <ArrowRightIcon width={20} className={styles.linkIcon} />
+            <ArrowRightIcon
+              aria-hidden="true"
+              width={20}
+              className={styles.linkIcon}
+            />
           </Blurred>
         </Blurred>
 
@@ -118,7 +130,11 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.radargestaoAriaLabel}
           >
             {projects.seeMore}
-            <ArrowRightIcon width={20} className={styles.linkIcon} />
+            <ArrowRightIcon
+              aria-hidden="true"
+              width={20}
+              className={styles.linkIcon}
+            />
           </Blurred>
         </Blurred>
 
@@ -137,7 +153,11 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.sevenplaceAriaLabel}
           >
             {projects.seeMore}
-            <ArrowRightIcon width={20} className={styles.linkIcon} />
+            <ArrowRightIcon
+              aria-hidden="true"
+              width={20}
+              className={styles.linkIcon}
+            />
           </Blurred>
         </Blurred>
 
@@ -161,7 +181,11 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.shiftcarAriaLabel}
           >
             {projects.seeMore}
-            <ArrowRightIcon width={20} className={styles.linkIcon} />
+            <ArrowRightIcon
+              aria-hidden="true"
+              width={20}
+              className={styles.linkIcon}
+            />
           </Blurred>
         </Blurred>
       </div>
@@ -176,7 +200,11 @@ const Projects: FC<Props> = ({ projects }) => (
       <div className={styles.repositoriesWrapper}>
         <Blurred bordered className={styles.itemCard}>
           <div className={styles.header}>
-            <ForkIcon width={20} className={styles.headerIcon} />
+            <ForkIcon
+              aria-hidden="true"
+              width={20}
+              className={styles.headerIcon}
+            />
             jhonnyizidoro/strapi-generate-types
           </div>
           <p className={styles.text}>{projects.strapiGenerateTypesText}</p>
@@ -192,13 +220,21 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.strapiGenerateTypesAriaLabel}
           >
             {projects.seeMore}
-            <ArrowRightIcon width={20} className={styles.linkIcon} />
+            <ArrowRightIcon
+              aria-hidden="true"
+              width={20}
+              className={styles.linkIcon}
+            />
           </Blurred>
         </Blurred>
 
         <Blurred bordered className={styles.itemCard}>
           <div className={styles.header}>
-            <ForkIcon width={20} className={styles.headerIcon} />
+            <ForkIcon
+              aria-hidden="true"
+              width={20}
+              className={styles.headerIcon}
+            />
             jhonnyizidoro/marriage
           </div>
           <p className={styles.text}>{projects.marriageText}</p>
@@ -214,7 +250,11 @@ const Projects: FC<Props> = ({ projects }) => (
             aria-label={projects.marriageAriaLabel}
           >
             {projects.seeMore}
-            <ArrowRightIcon width={20} className={styles.linkIcon} />
+            <ArrowRightIcon
+              aria-hidden="true"
+              width={20}
+              className={styles.linkIcon}
+            />
           </Blurred>
         </Blurred>
       </div>

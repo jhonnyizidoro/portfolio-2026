@@ -20,8 +20,14 @@ type Props = {
 
 const Achievements: FC<Props> = async ({ achievements }) => (
   <Container id={sectionIds.achievement} size="md" className={styles.container}>
-    <RectangleIcon className={cn(styles.rectangle, styles.rectangleTop)} />
-    <RectangleIcon className={cn(styles.rectangle, styles.rectangleBottom)} />
+    <RectangleIcon
+      aria-hidden="true"
+      className={cn(styles.rectangle, styles.rectangleTop)}
+    />
+    <RectangleIcon
+      aria-hidden="true"
+      className={cn(styles.rectangle, styles.rectangleBottom)}
+    />
     <Blurred className={styles.card} shadow="lg">
       <div className={styles.header}>
         <div className={styles.chart} />

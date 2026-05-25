@@ -9,10 +9,17 @@
 .sphere {
   position: absolute;
   left: -10vw;
-  top: 40px;
-  width: 30vw;
+  width: max(30vw, 250px);
   filter: drop-shadow(0 0 40px rgb(0 0 0 / 10%));
   animation: drift 7s ease-in-out infinite;
+
+  @media (width >= 1280px) {
+    top: 40px;
+  }
+
+  @media (width < 1280px) {
+    bottom: -40px;
+  }
 }
 
 .title {
@@ -24,6 +31,8 @@
 .link {
   display: block;
   margin-top: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .linkStrong {

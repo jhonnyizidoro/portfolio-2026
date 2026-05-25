@@ -48,7 +48,7 @@ const FloatingContact: FC = () => {
           rel="noopener noreferrer"
           aria-label={floatingContact.whatsappAriaLabel}
         >
-          <WhatsAppIcon width={15} className={styles.icon} />
+          <WhatsAppIcon aria-hidden="true" width={15} className={styles.icon} />
         </Blurred>
       </Tooltip>
 
@@ -61,7 +61,7 @@ const FloatingContact: FC = () => {
           href={`tel:${contacts.phone}`}
           aria-label={floatingContact.phoneAriaLabel}
         >
-          <PhoneIcon width={15} className={styles.icon} />
+          <PhoneIcon aria-hidden="true" width={15} className={styles.icon} />
         </Blurred>
       </Tooltip>
 
@@ -74,7 +74,7 @@ const FloatingContact: FC = () => {
           href={`mailto:${contacts.email}`}
           aria-label={floatingContact.emailAriaLabel}
         >
-          <EnvelopeIcon width={15} className={styles.icon} />
+          <EnvelopeIcon aria-hidden="true" width={15} className={styles.icon} />
         </Blurred>
       </Tooltip>
 
@@ -89,7 +89,7 @@ const FloatingContact: FC = () => {
           rel="noopener noreferrer"
           aria-label={floatingContact.linkedinAriaLabel}
         >
-          <LinkedinIcon width={15} className={styles.icon} />
+          <LinkedinIcon aria-hidden="true" width={15} className={styles.icon} />
         </Blurred>
       </Tooltip>
 
@@ -104,7 +104,7 @@ const FloatingContact: FC = () => {
           rel="noopener noreferrer"
           aria-label={floatingContact.githubAriaLabel}
         >
-          <GithubIcon width={15} className={styles.icon} />
+          <GithubIcon aria-hidden="true" width={15} className={styles.icon} />
         </Blurred>
       </Tooltip>
     </Blurred>

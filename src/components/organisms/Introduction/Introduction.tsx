@@ -46,7 +46,11 @@ const Introduction: FC<Props> = ({ intro }) => (
         type="button"
       >
         {intro.scrollButton}
-        <ArrowRightIcon width={20} className={styles.buttonAccentIcon} />
+        <ArrowRightIcon
+          aria-hidden="true"
+          width={20}
+          className={styles.buttonAccentIcon}
+        />
       </ScrollButton>
 
       {/* TODO: ideally this would open a modal with contact options */}
@@ -58,7 +62,7 @@ const Introduction: FC<Props> = ({ intro }) => (
         href={`https://wa.me/${contacts.whatsApp.replace("+", "")}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="WhatsApp"
+        aria-label={intro.contactButtonAriaLabel}
         hoverable
       >
         {intro.contactButton}
@@ -66,7 +70,11 @@ const Introduction: FC<Props> = ({ intro }) => (
     </Blurred>
 
     <div className={styles.right}>
-      <Image className={cn(styles.imageCommon, styles.image)} src={Me} alt="" />
+      <Image
+        className={cn(styles.imageCommon, styles.image)}
+        src={Me}
+        alt={intro.profileImageAlt}
+      />
       <div
         className={cn(styles.imageCommon, styles.pattern, styles.patternBottom)}
       />
@@ -77,7 +85,11 @@ const Introduction: FC<Props> = ({ intro }) => (
       {/* Floating pills */}
       <div className={cn(styles.pill, styles.leftPill)}>
         <Blurred className={styles.pillContent} shadow="md">
-          <WebPageIcon width={20} className={styles.pillIcon} />{" "}
+          <WebPageIcon
+            aria-hidden="true"
+            width={20}
+            className={styles.pillIcon}
+          />{" "}
           {intro.frontendPill}
         </Blurred>
         <Pointer direction="right" responsive />
@@ -85,7 +97,11 @@ const Introduction: FC<Props> = ({ intro }) => (
 
       <div className={cn(styles.pill, styles.centerPill)}>
         <Blurred className={styles.pillContent} shadow="md">
-          <ConfigIcon width={20} className={styles.pillIcon} />{" "}
+          <ConfigIcon
+            aria-hidden="true"
+            width={20}
+            className={styles.pillIcon}
+          />{" "}
           {intro.backendPill}
         </Blurred>
         <Pointer direction="right" responsive />
@@ -94,7 +110,8 @@ const Introduction: FC<Props> = ({ intro }) => (
       <div className={cn(styles.pill, styles.rightPill)}>
         <Pointer direction="left" responsive mobileDirection="right" />
         <Blurred className={styles.pillContent} shadow="md">
-          <ChipIcon width={20} className={styles.pillIcon} /> {intro.aiPill}
+          <ChipIcon aria-hidden="true" width={20} className={styles.pillIcon} />{" "}
+          {intro.aiPill}
         </Blurred>
       </div>
     </div>

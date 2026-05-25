@@ -33,6 +33,8 @@ const RadialBarChart: FC<Props> = ({ percentage, color, label }) => {
       className={styles.wrapper}
       style={{ width: size, height: size }}
       ref={ref}
+      role="img"
+      aria-label={`${label}: ${percentage}%`}
     >
       <svg width={size} height={size} className={styles.svg}>
         <defs>

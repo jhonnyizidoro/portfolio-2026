@@ -1,10 +1,15 @@
 {
+  "accessibility": {
+    "skipToContent": "Pular para o conteúdo principal"
+  },
   "intro": {
     "heading": "Engenheiro Sênior Frontend / Fullstack",
     "greeting": "Olá, sou o",
     "text": "Engenheiro Fullstack com mais de 9 anos entregando aplicações em produção em escala. Construo sistemas ponta a ponta e integro IA ao meu fluxo de trabalho para entregar software de alta qualidade com mais eficiência.",
     "scrollButton": "Me conheça",
     "contactButton": "Entre em contato",
+    "contactButtonAriaLabel": "Me contate pelo WhatsApp",
+    "profileImageAlt": "Jhonny Menarim - Engenheiro Full Stack",
     "frontendPill": "Engenheiro Frontend",
     "backendPill": "Desenvolvedor Backend",
     "aiPill": "Orquestrador de IA"
@@ -13,6 +18,7 @@
     "text": "Engenheiro Sênior Full-Stack / Front-End com mais de 9 anos de experiência, especializado no ecossistema React (incluindo Next.js e Remix), arquiteturas escaláveis com Node.js/JavaScript/TypeScript e aplicações de alta performance. Histórico comprovado de arquitetar plataformas web robustas do zero, modernizar codebases complexos e otimizar a performance do frontend para garantir experiências de usuário fluidas e de baixa latência em escala. Hábil em liderar decisões técnicas, aproveitar fluxos de trabalho assistidos por IA e entregar resultados em times distribuídos e internacionais."
   },
   "languageSwitch": {
+    "navAriaLabel": "Idioma",
     "ptBrAriaLabel": "Mudar para Português",
     "enAriaLabel": "Mudar para Inglês"
   },

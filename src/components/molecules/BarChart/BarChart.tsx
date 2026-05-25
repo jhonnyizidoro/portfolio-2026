@@ -23,7 +23,12 @@ const BarChart: FC<Props> = ({ first, second }) => {
   const onScreen = useOnScreen(ref);
 
   return (
-    <div className={styles.wrapper} ref={ref}>
+    <div
+      className={styles.wrapper}
+      ref={ref}
+      role="img"
+      aria-label={`${first.label} vs ${second.label}`}
+    >
       <div className={styles.left}>
         <span className={cn(styles.label, onScreen && styles.labelTopVisible)}>
           {second.label}

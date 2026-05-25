@@ -12,6 +12,7 @@ type Props = {
 
 const Pointer: FC<Props> = ({ direction, responsive, mobileDirection }) => (
   <div
+    aria-hidden="true"
     className={cn(
       styles.pointer,
       responsive && styles.responsivePointer,

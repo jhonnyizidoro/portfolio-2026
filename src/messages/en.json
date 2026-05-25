@@ -1,10 +1,15 @@
 {
+  "accessibility": {
+    "skipToContent": "Skip to main content"
+  },
   "intro": {
     "heading": "Senior Frontend / Fullstack engineer",
     "greeting": "Hello, I'm",
     "text": "Fullstack engineer with 9+ years shipping production apps at scale. I build end-to-end systems and integrate AI into my workflow to move faster and deliver high quality software.",
     "scrollButton": "Know me",
     "contactButton": "Get in touch",
+    "contactButtonAriaLabel": "Contact me on WhatsApp",
+    "profileImageAlt": "Jhonny Menarim - Full Stack Developer",
     "frontendPill": "Frontend Engineer",
     "backendPill": "Backend Developer",
     "aiPill": "AI Orchestrator"
@@ -13,6 +18,7 @@
     "text": "Senior Full-Stack / Front-End Engineer with 9+ years of experience specializing in the React ecosystem (including Next.js and Remix), scalable Node.js/Javascript/TypeScript architectures, and high performance applications. Proven track record of architecting robust web platforms from scratch, modernizing complex codebases, and optimizing frontend performance to ensure seamless, low latency user experiences at scale. Adept at driving technical decisions, leveraging AI-assisted workflows, and delivering impact within distributed, international remote teams."
   },
   "languageSwitch": {
+    "navAriaLabel": "Language",
     "ptBrAriaLabel": "Switch to Portuguese",
     "enAriaLabel": "Switch to English"
   },

@@ -28,6 +28,8 @@ const LanguageSwitch: FC = () => {
 
   return (
     <Blurred
+      as="nav"
+      aria-label={languageSwitch.navAriaLabel}
       className={cn(styles.wrapper, scrolled && styles.wrapperScrolled)}
       shadow="lg"
       bordered
@@ -47,17 +49,19 @@ const LanguageSwitch: FC = () => {
         className={styles.link}
         href="/pt-br"
         aria-label={languageSwitch.ptBrAriaLabel}
+        aria-current={language === "pt-br" ? "page" : undefined}
       >
         <span className={styles.label}>PT-BR</span>
-        <BrFlagIcon />
+        <BrFlagIcon aria-hidden="true" />
       </Link>
       <Link
         className={styles.link}
         href="/en"
         aria-label={languageSwitch.enAriaLabel}
+        aria-current={language === "en" ? "page" : undefined}
       >
         <span className={styles.label}>EN</span>
-        <UsFlagIcon />
+        <UsFlagIcon aria-hidden="true" />
       </Link>
     </Blurred>
   );
