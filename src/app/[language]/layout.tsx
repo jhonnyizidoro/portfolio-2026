@@ -1,5 +1,6 @@
 import { FC, PropsWithChildren } from "react";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 import { jsonLd, siteUrl } from "@/constants";
 
@@ -74,6 +75,7 @@ const RootLayout: FC<PropsWithChildren<Props>> = async ({
 
   return (
     <html lang={language} className={proximaNova.variable}>
+      <Analytics />
       <I18nProvider language={language} t={t}>
         <body>
           <script
