@@ -1,8 +1,7 @@
 import type { FC } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
-import { contacts, sectionIds } from "@/constants";
+import { sectionIds } from "@/constants";
 
 import Blurred from "@/components/atoms/Blurred";
 import Container from "@/components/atoms/Container";
@@ -10,6 +9,7 @@ import Dot from "@/components/atoms/Dot";
 import Pointer from "@/components/atoms/Pointer";
 import ScrollButton from "@/components/atoms/ScrollButton";
 import ScrollIndicator from "@/components/atoms/ScrollIndicator";
+import IntroductionContactButton from "@/components/molecules/IntroductionContactButton";
 
 import { cn } from "@/utils/cn";
 
@@ -53,20 +53,7 @@ const Introduction: FC<Props> = ({ intro }) => (
         />
       </ScrollButton>
 
-      {/* TODO: ideally this would open a modal with contact options */}
-      <Blurred
-        bordered
-        className={styles.button}
-        as={Link}
-        shadow="sm"
-        href={`https://wa.me/${contacts.whatsApp.replace("+", "")}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={intro.contactButtonAriaLabel}
-        hoverable
-      >
-        {intro.contactButton}
-      </Blurred>
+      <IntroductionContactButton className={styles.button} />
     </Blurred>
 
     <div className={styles.right}>

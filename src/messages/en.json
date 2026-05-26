@@ -30,7 +30,7 @@
     "text": "Fullstack engineer with 9+ years shipping production apps at scale. I build end-to-end systems and integrate AI into my workflow to move faster and deliver high quality software.",
     "scrollButton": "Know me",
     "contactButton": "Get in touch",
-    "contactButtonAriaLabel": "Contact me on WhatsApp",
+    "contactButtonAriaLabel": "Contact options",
     "profileImageAlt": "Jhonny Menarim - Full Stack Developer",
     "frontendPill": "Frontend Engineer",
     "backendPill": "Backend Developer",
@@ -44,7 +44,7 @@
     "ptBrAriaLabel": "Switch to Portuguese",
     "enAriaLabel": "Switch to English"
   },
-  "floatingContact": {
+  "contactIcons": {
     "whatsappAriaLabel": "Contact me on WhatsApp",
     "phoneAriaLabel": "Call me",
     "emailAriaLabel": "Send me an email",

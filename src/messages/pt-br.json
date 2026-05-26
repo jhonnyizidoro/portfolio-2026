@@ -30,7 +30,7 @@
     "text": "Engenheiro Fullstack com mais de 9 anos entregando aplicações em produção em escala. Construo sistemas ponta a ponta e integro IA ao meu fluxo de trabalho para entregar software de alta qualidade com mais eficiência.",
     "scrollButton": "Me conheça",
     "contactButton": "Entre em contato",
-    "contactButtonAriaLabel": "Me contate pelo WhatsApp",
+    "contactButtonAriaLabel": "Opções de contato",
     "profileImageAlt": "Jhonny Menarim - Engenheiro Full Stack",
     "frontendPill": "Engenheiro Frontend",
     "backendPill": "Desenvolvedor Backend",
@@ -44,7 +44,7 @@
     "ptBrAriaLabel": "Mudar para Português",
     "enAriaLabel": "Mudar para Inglês"
   },
-  "floatingContact": {
+  "contactIcons": {
     "whatsappAriaLabel": "Me contate pelo WhatsApp",
     "phoneAriaLabel": "Me ligue",
     "emailAriaLabel": "Me envie um e-mail",
