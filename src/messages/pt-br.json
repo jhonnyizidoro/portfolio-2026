@@ -58,8 +58,8 @@
   },
   "cookieAlert": {
     "title": "Este site usa cookies",
-    "text": "Apenas analytics anônimos. Nenhum dado pessoal coletado.",
-    "consent": "Eu concordo"
+    "text": "Apenas dados anônimos coletados para analytics.",
+    "consent": "Concordo"
   },
   "footer": {
     "title": "Entre em contato",
