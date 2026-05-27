@@ -56,6 +56,11 @@
     "linkedinTooltip": "LinkedIn",
     "githubTooltip": "GitHub"
   },
+  "cookieAlert": {
+    "title": "Este site usa cookies",
+    "text": "Apenas analytics anônimos. Nenhum dado pessoal coletado.",
+    "consent": "Eu concordo"
+  },
   "footer": {
     "title": "Entre em contato",
     "phoneAriaLabel": "Me ligue",

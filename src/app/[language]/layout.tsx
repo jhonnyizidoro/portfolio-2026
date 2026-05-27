@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { jsonLd, siteUrl } from "@/constants";
 
 import BodyBackground from "@/components/atoms/BodyBackground";
+import CookieAlert from "@/components/molecules/CookieAlert";
 import FloatingContact from "@/components/molecules/FloatingContact";
 import Footer from "@/components/molecules/Footer";
 import LanguageSwitch from "@/components/molecules/LanguageSwitch";
@@ -94,6 +95,7 @@ const RootLayout: FC<PropsWithChildren<Props>> = async ({
             {children}
           </main>
           <Footer footer={t.footer} />
+          <CookieAlert />
         </body>
       </I18nProvider>
     </html>

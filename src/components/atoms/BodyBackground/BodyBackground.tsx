@@ -8,8 +8,18 @@ import styles from "./BodyBackground.module.scss";
 
 const BodyBackground: FC = () => (
   <div className={styles.wrapper} aria-hidden="true">
-    <Image src={Waves} className={cn(styles.wave, styles.backWave)} alt="" />
-    <Image src={Waves} className={cn(styles.wave, styles.frontWave)} alt="" />
+    <Image
+      loading="eager"
+      src={Waves}
+      className={cn(styles.wave, styles.backWave)}
+      alt=""
+    />
+    <Image
+      loading="eager"
+      src={Waves}
+      className={cn(styles.wave, styles.frontWave)}
+      alt=""
+    />
     <div className={styles.blur} />
   </div>
 );

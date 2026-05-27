@@ -1,6 +1,6 @@
 // @vitest-environment happy-dom
 import { act, renderHook } from "@testing-library/react";
-import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import { useIsScrolled } from "./use-is-scrolled";
 
@@ -81,6 +81,79 @@ describe("useIsScrolled", () => {
       });
 
       expect(result.current).toBe(true);
+    });
+  });
+
+  describe("neverReset: true (permanent latch)", () => {
+    it("returns false initially", () => {
+      const { result } = renderHook(() =>
+        useIsScrolled({ offset: 200, neverReset: true }),
+      );
+      expect(result.current).toBe(false);
+    });
+
+    it("returns true when scrollY exceeds offset", () => {
+      const { result } = renderHook(() =>
+        useIsScrolled({ offset: 200, neverReset: true }),
+      );
+
+      act(() => {
+        Object.defineProperty(window, "scrollY", {
+          writable: true,
+          value: 201,
+        });
+        window.dispatchEvent(new Event("scroll"));
+      });
+
+      expect(result.current).toBe(true);
+    });
+
+    it("stays true after scrolling back below offset", () => {
+      const { result } = renderHook(() =>
+        useIsScrolled({ offset: 200, neverReset: true }),
+      );
+
+      act(() => {
+        Object.defineProperty(window, "scrollY", {
+          writable: true,
+          value: 300,
+        });
+        window.dispatchEvent(new Event("scroll"));
+      });
+
+      act(() => {
+        Object.defineProperty(window, "scrollY", { writable: true, value: 0 });
+        window.dispatchEvent(new Event("scroll"));
+      });
+
+      expect(result.current).toBe(true);
+    });
+
+    it("removes listener after latching true", () => {
+      const addSpy = vi.spyOn(window, "addEventListener");
+      const removeSpy = vi.spyOn(window, "removeEventListener");
+
+      const { result } = renderHook(() =>
+        useIsScrolled({ offset: 200, neverReset: true }),
+      );
+
+      act(() => {
+        Object.defineProperty(window, "scrollY", {
+          writable: true,
+          value: 201,
+        });
+        window.dispatchEvent(new Event("scroll"));
+      });
+
+      expect(result.current).toBe(true);
+
+      const scrollListenerRemoved = removeSpy.mock.calls.some(
+        ([event]) => event === "scroll",
+      );
+      expect(scrollListenerRemoved).toBe(true);
+
+      addSpy.mockRestore();
+      removeSpy.mockRestore();
     });
   });
 

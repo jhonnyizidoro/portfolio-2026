@@ -76,7 +76,7 @@ const Introduction: FC<Props> = ({ intro }) => (
             aria-hidden="true"
             width={20}
             className={styles.pillIcon}
-          />{" "}
+          />
           {intro.frontendPill}
         </Blurred>
         <Pointer direction="right" responsive />
@@ -88,7 +88,7 @@ const Introduction: FC<Props> = ({ intro }) => (
             aria-hidden="true"
             width={20}
             className={styles.pillIcon}
-          />{" "}
+          />
           {intro.backendPill}
         </Blurred>
         <Pointer direction="right" responsive />

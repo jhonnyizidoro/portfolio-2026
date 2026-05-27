@@ -4,6 +4,8 @@
   text-align: center;
   padding-bottom: calc(var(--section-spacing));
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .sphere {
@@ -25,7 +27,7 @@
 .title {
   color: var(--color-t2);
   font-weight: var(--weight-semibold);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .link {

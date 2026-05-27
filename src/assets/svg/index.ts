@@ -3,6 +3,7 @@ export { BrFlagIcon } from "./BrFlagIcon";
 export { ChipIcon } from "./ChipIcon";
 export { CodeIcon } from "./CodeIcon";
 export { ConfigIcon } from "./ConfigIcon";
+export { CookieIcon } from "./CookieIcon";
 export { EnvelopeIcon } from "./EnvelopeIcon";
 export { EyeIcon } from "./EyeIcon";
 export { ForkIcon } from "./ForkIcon";
