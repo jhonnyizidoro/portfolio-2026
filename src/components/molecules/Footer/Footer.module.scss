@@ -1,11 +1,11 @@
 .footer {
   position: relative;
   z-index: 1;
-  text-align: center;
   padding-bottom: calc(var(--section-spacing));
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .sphere {
@@ -39,12 +39,6 @@
 
 .linkStrong {
   color: var(--color-accent);
-}
-
-.portfolioLinks {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
 }
 
 @keyframes drift {

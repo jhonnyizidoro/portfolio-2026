@@ -54,28 +54,6 @@ const Footer: FC<Props> = ({ footer }) => (
       <strong className={styles.linkStrong}>{footer.resumeDownload}</strong>{" "}
       {footer.resumeSuffix}
     </Link>
-
-    <div className={styles.portfolioLinks}>
-      <Link
-        className={styles.link}
-        href="https://jhonnyizidoro.github.io/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={footer.portfolioV1AriaLabel}
-      >
-        {footer.portfolioV1}
-      </Link>
-
-      <Link
-        className={styles.link}
-        href="https://old.jhonnymenarim.com.br/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={footer.portfolioV2AriaLabel}
-      >
-        {footer.portfolioV2}
-      </Link>
-    </div>
   </footer>
 );
 

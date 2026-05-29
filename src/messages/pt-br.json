@@ -68,11 +68,7 @@
     "linkedinAriaLabel": "Visite meu perfil no LinkedIn",
     "resumeAriaLabel": "Baixar meu currículo",
     "resumeDownload": "Baixar",
-    "resumeSuffix": "meu currículo",
-    "portfolioV1": "Portfolio 2019",
-    "portfolioV1AriaLabel": "Visitar meu portfólio de 2019",
-    "portfolioV2": "Portfolio 2023",
-    "portfolioV2AriaLabel": "Visitar meu portfólio de 2023"
+    "resumeSuffix": "meu currículo"
   },
   "projects": {
     "builtTitleBefore": "Alguns",
